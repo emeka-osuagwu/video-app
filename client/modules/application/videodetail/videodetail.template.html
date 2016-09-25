@@ -1,0 +1,63 @@
+<div class="container-fluid">
+    <div ng-if="!ctrl.currentVideoId">
+        <div class="alert alert-danger"><strong>No video has been selected,</strong> Please a video from video list. !!</div>
+        <div class="btn-group btn-group-sm">
+            <button type="button" class="btn btn-primary" ng-click="ctrl.moveToVideoList()">View All</button>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading clearfix videoDetailTitle" align="center">
+            <div class="btn-group btn-group-sm pull-left">
+                <button type="button" class="btn btn-primary" ng-click="ctrl.moveToVideoList()">View All</button>
+            </div>
+            <span ng-show="ctrl.fetchingVideo">Fetching Video</span>
+            <span ng-show="!ctrl.fetchingVideo && !ctrl.currentVideo">Error loading video</span>
+            <span ng-show="!ctrl.fetchingVideo && ctrl.currentVideo">{{ctrl.currentVideo.name}}</span>
+        </div>
+        <div class="panel-body">
+            <loader ng-show="ctrl.fetchingVideo" msg="Loading..."></loader>
+            <div ng-if="!ctrl.fetchingVideo && !ctrl.currentVideo">
+                <div class="alert alert-danger"><strong>{{ctrl.videoLoadingErrorMessage}} !!</strong></div>
+            </div>
+            <div ng-if="!ctrl.fetchingVideo && ctrl.currentVideo">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div align="center" class="embed-responsive embed-responsive-16by9">
+                            <video controls class="embed-responsive-item" no-parallel-play>
+                                <source src="{{ctrl.currentVideo.url}}" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ratingRow">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-2 ratingLabel">
+                                <span>Overall Rating:</span>        
+                            </div>
+                            <div class="col-md-5 ratingStars">
+                                <div id="overAllRatingId" class="star-rating" star-rating rating-value="ctrl.currentVideo.avgRating" data-max="5" size="4" read-only="true"></div>      
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-2 ratingLabel">
+                                <span>Rate this video:</span>        
+                            </div>
+                            <div class="col-md-5 ratingStars">
+                                <div class="star-rating" star-rating rating-value="ctrl.newRating" data-max="5" size="4" on-rating-selected="ctrl.rateVideo(rating)"></div>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Description:</h3>
+                        <span>{{ctrl.currentVideo.description}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

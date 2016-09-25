@@ -1,0 +1,22 @@
+.videoListView {
+}
+
+.videoPanel {
+    height: 260px;
+}
+
+.videoTitle {
+    text-align: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.videoTitle a {
+    color: #00192C;
+}
+
+.videoTitle a:hover {
+    text-decoration: none;
+    color: #999999;
+}

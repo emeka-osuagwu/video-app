@@ -1,0 +1,18 @@
+.videoDetailTitle {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ratingRow {
+    margin-top: 25px;
+}
+
+.ratingLabel {
+    margin-top: 17px;
+    padding-left: 40px;
+    padding-right: 0px;
+}
+
+.ratingStars {
+    padding-left: 5px;
+}

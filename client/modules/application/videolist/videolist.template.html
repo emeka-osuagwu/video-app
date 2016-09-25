@@ -1,0 +1,98 @@
+<div class="container-fluid" infinite-scroll="ctrl.loadVideos()">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <div  class="row">
+                <div ng-show="!ctrl.fetchingVideos && !ctrl.videosLoadingErrorMessage && (ctrl.videoList.length === 0)" class="col-md-12">
+                    <div class="alert alert-danger"><strong>No videos available to watch !!</strong></div>
+                </div>
+                <div ng-show="ctrl.videoList.length !== 0" class="col-md-3" ng-repeat="video in ctrl.videoList">
+                    <div class="panel panel-default videoPanel">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12 videoTitle">
+                                    <a ng-href="videodetail/{{video._id}}">
+                                        <span>{{video.name.length > 25 ? video.name.substring(0, 25) + '...' : video.name}}</span>
+                                    </a>
+                                    <!-- <div class="well well-sm">{{video.name}}</div> -->
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div align="center" class="embed-responsive embed-responsive-16by9">
+                                        <video controls class="embed-responsive-item" no-parallel-play>
+                                            <source src="{{video.url}}" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="star-rating" star-rating rating-value="video.avgRating" data-max="5" size="1" read-only="true"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span>{{video.description.length > 55 ? (video.description.substring(0, 55) + "...") : video.description}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div ng-show="!ctrl.fetchingVideos && ctrl.videosLoadingErrorMessage" class="col-md-12">
+                    <div class="alert alert-danger"><strong>{{ctrl.videosLoadingErrorMessage}} !!</strong></div>
+                </div>
+                <div ng-show="ctrl.fetchingVideos" class="col-md-12">
+                    <loader msg="Loading..."></loader>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- View video modal -->
+    <div id="viewVideoModalId" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <loader ng-show="ctrl.fetchingVideo" msg="Loading..."></loader>
+                    <h3 ng-show="!ctrl.fetchingVideo && !ctrl.currentVideo" class="modal-title">Error loading video</h3>
+                    <h3 ng-show="!ctrl.fetchingVideo && ctrl.currentVideo" class="modal-title">{{ctrl.currentVideo.name}}</h3>
+                </div>
+                <div class="modal-body">
+                    <div ng-if="!ctrl.fetchingVideo && !ctrl.currentVideo">
+                        <div class="alert alert-danger"><strong>{{ctrl.videoLoadingErrorMessage}} !!</strong></div>
+                    </div>
+                    <div ng-if="!ctrl.fetchingVideo && ctrl.currentVideo" class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div align="center" class="embed-responsive embed-responsive-16by9">
+                                        <video controls class="embed-responsive-item" no-parallel-play>
+                                            <source src="{{ctrl.currentVideo.url}}" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="star-rating" star-rating rating-value="ctrl.currentVideo.avgRating" data-max="5" size="4" on-rating-selected="ctrl.rateVideo(ctrl.currentVideo.avgRating)"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span>{{ctrl.currentVideo.description}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+.rating {
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0;
+}
+
+ul.rating {
+    display: inline-block;
+}
+
+.rating li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.rating li.size1 {
+    font-size: 20px;
+}
+
+.rating li.size2 {
+    font-size: 25px;
+}
+
+.rating li.size3 {
+    font-size: 30px;
+}
+
+.rating li.size4 {
+    font-size: 35px;
+}
+
+.rating li.size5 {
+    font-size: 40px;
+}
+
+.rating li.disabled {
+    cursor: not-allowed;
+}
+
+.rating .filled {
+    color: #21568b;
+}
