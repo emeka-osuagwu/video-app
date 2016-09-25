@@ -6,6 +6,7 @@
   "scripts": {
     "postinstall": "jspm install",
     "test": "karma start karma.conf.js",
+    "test:dev": "karma start karma.dev.conf.js",
     "start": "node index.js"
   },
   "author": "",
