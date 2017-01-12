@@ -1,0 +1,31 @@
+
+<div class="app__wrapper">
+
+	<div class="video_player__wrapper">
+		<div class="video_player col-sm-6 col-md-9">
+			<video class="video_player__video" controls>
+				<source src="/{video.url}}" type="video/mp4">
+				<source src="/{{video.url}}" type="video/ogg">
+				Your browser does not support the video tag.
+			</video>
+			<p class="video_player__description">{{video.description}}</p>
+		</div>
+
+		<div class="col-sm-6 col-md-3 video__item" ng-repeat="v in videos | orderBy:random | limitTo:2">
+			<div class="thumbnail">
+				<a href="/video/{{v._id}}">
+					<video class="video__item__video" height="240" controls>
+						<source src="/{{v.url}}" type="video/mp4">
+						<source src="/{{v.url}}" type="video/ogg">
+						Your browser does not support the video tag.
+					</video>
+				</a>
+				<div class="caption">
+					<h3 class="video__item__title">{{v.name}}</h3>
+					<p class="video__item__description">{{v.description}}</p>
+					<p>rating</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

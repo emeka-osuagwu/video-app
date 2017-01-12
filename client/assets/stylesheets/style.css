@@ -1,0 +1,68 @@
+/* line 2, ../sass/style.scss */
+.app__wrapper {
+  margin-top: 4icmi20px;
+  margin-bottom: 100px;
+}
+
+/* line 3, ../sass/home_style.scss */
+.video__item {
+  position: relative;
+}
+/* line 7, ../sass/home_style.scss */
+.video__item .overlay {
+  position: absolute;
+  width: 90%;
+  height: 49%;
+}
+/* line 13, ../sass/home_style.scss */
+.video__item .video__item__video {
+  width: 100%;
+  margin-top: -13px;
+}
+/* line 18, ../sass/home_style.scss */
+.video__item .video__item__title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+/* line 23, ../sass/home_style.scss */
+.video__item .video__item__description {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+/* line 31, ../sass/home_style.scss */
+.video_player__wrapper .video_player {
+  border: 1px solid gray;
+  padding-top: 15px;
+}
+/* line 35, ../sass/home_style.scss */
+.video_player__wrapper .video_player .video_player__video {
+  width: 100%;
+}
+/* line 39, ../sass/home_style.scss */
+.video_player__wrapper .video_player .video_player__description {
+  word-wrap: break-word;
+}
+/* line 46, ../sass/home_style.scss */
+.video_player__wrapper .video__item .video__item__video {
+  margin-top: -44px;
+}
+/* line 50, ../sass/home_style.scss */
+.video_player__wrapper .video__item .video__item__title {
+  font-size: 15px;
+}
+/* line 54, ../sass/home_style.scss */
+.video_player__wrapper .video__item .video__item__description {
+  font-size: 10px;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 16px;
+  /* fallback */
+  max-height: 32px;
+  /* fallback */
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
