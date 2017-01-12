@@ -64,3 +64,39 @@
 		}
 	}
 }
+
+
+
+
+/* Extra exception screens */
+@media screen and (max-width: 320px) {}
+
+/* Small only  aka mobile*/
+@media screen and (max-width: 39.9375em) {
+	.video__item .video__item__video {
+	    width: 100%;
+	    margin-top: 0px;
+	}
+
+	.col-sm-6.col-md-3.video__item {
+	    margin-top: 28px;
+	}
+
+	.video_player__wrapper .video__item .video__item__video {
+	    margin-top: -30px;
+	}
+}
+
+/* Medium and up*/
+@media screen and (min-width: 40em) {}
+
+/* Medium only aka ipad */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up  aka big ipad and laptops :(*/
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
+
+@media screen and (max-width: 768px) {}
