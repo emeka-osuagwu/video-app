@@ -7,8 +7,4 @@ App.controller('homeController', function($scope, $http, Auth, localStorageServi
 	     $scope.videos = response.data.data;
 
 	});
-
-
-
-
 });
