@@ -6,6 +6,7 @@ var mongoose 		= require('mongoose');
 var db 				= mongoose.connection;
 var app 			= express();
 
+
 db.on('error', console.error);
 
 //requiring local modeles
