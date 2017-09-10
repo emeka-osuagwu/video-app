@@ -13,5 +13,4 @@ var routesAPI = function(app){
 	app.post('/video/ratings', helpers.isAuthenticated, videos.rate);
 }
 
-
 module.exports = routesAPI;
