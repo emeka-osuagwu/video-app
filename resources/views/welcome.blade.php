@@ -374,7 +374,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                                     </button>
                                                                 </a>
                                                             </div>
-                                                            <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
+                                                            <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ number_format( (int) $class['price'], 2) }})</a></h2>
                                                         </div>
                                                         <div class="post-body">
                                                             <div class="post-excerpt">
@@ -397,40 +397,40 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <div id="tab-lv21-second" class="tab-pane fade">
                                     <div class="timeline">
                                     @foreach($data->where('day', 1)->where('class', 2) as $class)
-                                    <article class="post-wrap {{ $class['class_id'] }}" data-animation="fadeInUp" data-animation-delay="300">
-                                        
-                                        <div class="media">
-                                            <!-- -->
-                                            <div class="post-media pull-left">
-                                                <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
-                                            </div>
-                                            <!-- -->
-                                            <div class="media-body">
-                                                <div class="post-header">
-                                                    <div class="post-meta">
-                                                        <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
-                                                        <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
-                                                            <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
-                                                                Add to cart
-                                                            </button>
-                                                        </a>
+                                        <article class="post-wrap {{ $class['class_id'] }}" data-animation="fadeInUp" data-animation-delay="300">
+                                            
+                                            <div class="media">
+                                                <!-- -->
+                                                <div class="post-media pull-left">
+                                                    <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
+                                                </div>
+                                                <!-- -->
+                                                <div class="media-body">
+                                                    <div class="post-header">
+                                                        <div class="post-meta">
+                                                            <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
+                                                            <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                                                <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                                                    Add to cart
+                                                                </button>
+                                                            </a>
+                                                        </div>
+                                                        <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ number_format( (int) $class['price'], 2) }})</a></h2>
                                                     </div>
-                                                    <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
-                                                </div>
-                                                <div class="post-body">
-                                                    <div class="post-excerpt">
-                                                        <p>{{ $class['description'] }}</p>
+                                                    <div class="post-body">
+                                                        <div class="post-excerpt">
+                                                            <p>{{ $class['description'] }}</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-footer">
+                                                        <span class="post-readmore">
+                                                            <i class="fa fa-microphone"></i> <strong>{{ $class['instructor'] }}</strong>
+                                                        </span>
                                                     </div>
                                                 </div>
-                                                <div class="post-footer">
-                                                    <span class="post-readmore">
-                                                        <i class="fa fa-microphone"></i> <strong>{{ $class['instructor'] }}</strong>
-                                                    </span>
-                                                </div>
+                                                <!-- -->
                                             </div>
-                                            <!-- -->
-                                        </div>
-                                    </article>
+                                        </article>
                                     @endforeach
                                     </div>
                                 </div>
@@ -467,7 +467,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                                     </button>
                                                                 </a>
                                                             </div>
-                                                            <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
+                                                            <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ number_format( (int) $class['price'], 2) }})</a></h2>
                                                         </div>
                                                         <div class="post-body">
                                                             <div class="post-excerpt">
@@ -507,7 +507,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                                     </button>
                                                                 </a>
                                                             </div>
-                                                            <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
+                                                            <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ number_format( (int) $class['price'], 2) }})</a></h2>
                                                         </div>
                                                         <div class="post-body">
                                                             <div class="post-excerpt">
@@ -605,8 +605,12 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                         </tr>
                                                     @endforeach
                                                     <tr>
+                                                        <th colspan="3"><span class="pull-right">Registration Fee </span></th>
+                                                        <th id="price_bag">&#8358; {{number_format(2000,2)}}</th>
+                                                    </tr>
+                                                    <tr>
                                                         <th colspan="3"><span class="pull-right">Total </span></th>
-                                                        <th id="price_bag" value="{{ $carts->pluck('price')->sum() }}">&#8358; {{ $carts->pluck('price')->sum() }}</th>
+                                                        <th id="price_bag" value="{{ $carts->pluck('price')->sum() }}">&#8358; {{ number_format($carts->pluck('price')->sum()) }}</th>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="3"><a href="#" class="pull-right btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Checkout now</a></td>
