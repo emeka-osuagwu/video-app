@@ -219,7 +219,6 @@ class UserController extends Controller
     	// return $class->where('class_id', $request->class_id)->count() ;
     	if ($class->where('class_id', $request->class_id)->count() < 1)
     	{
-    		$class = json_decode($_COOKIE['class']);
 	    	$new_data = $this->class_data()->where('class_id', $request->class_id)->first();
 
 	    	$class[] = $new_data;
