@@ -1,4 +1,9 @@
-    <div class="">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <div class="container">
+        <h5>Payment Confirmation</h5>
+    </div>
+    
+    <div class="container">
         <table class="table table-striped table-hover table-bordered">
             <tbody>
                 <tr>
@@ -29,3 +34,9 @@
             </tbody>
         </table>          
     </div>
+
+    <div class="container">
+        <h5>Please bring this alone</h5>
+    </div>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
