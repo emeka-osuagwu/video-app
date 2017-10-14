@@ -39,6 +39,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.all.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.min.js" rel="stylesheet">
 </head>
+
+<style>
+    .selected{
+        background: green;
+        color: #fff;
+    }
+</style>
+
+
+
+
 <body id="home" class="wide body-light">
 
 <!-- Preloader -->
@@ -357,10 +368,10 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                         <div class="post-header">
                                                             <div class="post-meta">
                                                                 <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
-                                                                <a href="#" class="pull-right">
-                                                                    <span class="" style="font-size: 15px" onclick="addToCart({{ json_encode($class) }})">
+                                                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                                                    <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
                                                                         Add to cart
-                                                                    </span>
+                                                                    </button>
                                                                 </a>
                                                             </div>
                                                             <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
@@ -386,41 +397,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <div id="tab-lv21-second" class="tab-pane fade">
                                     <div class="timeline">
                                     @foreach($data->where('day', 1)->where('class', 2) as $class)
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
-                                            
-                                            <div class="media">
-                                                <!-- -->
-                                                <div class="post-media pull-left">
-                                                    <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
-                                                </div>
-                                                <!-- -->
-                                                <div class="media-body">
-                                                    <div class="post-header">
-                                                        <div class="post-meta">
-                                                            <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
-                                                            <a href="#" class="pull-right">
-                                                                <span class="fa-stack fa-lg" onclick="addToCart({{ json_encode($class) }})">
-                                                                    <i class="fa fa-stack-2x fa-circle-thin"></i>
-                                                                    <i class="fa fa-stack-1x fa-share-alt"></i>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                        <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
-                                                    </div>
-                                                    <div class="post-body">
-                                                        <div class="post-excerpt">
-                                                            <p>{{ $class['description'] }}</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="post-footer">
-                                                        <span class="post-readmore">
-                                                            <i class="fa fa-microphone"></i> <strong>{{ $class['instructor'] }}</strong>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <!-- -->
-                                            </div>
-                                        </article>
+
                                     @endforeach
                                     </div>
                                 </div>
@@ -438,84 +415,16 @@ Moreover, we have table of honor where professional display their cakes to show 
                             <div class="tab-content lv2">
                                 <div id="tab-lv22-first" class="tab-pane fade in active">
                                     <div class="timeline">
-                                    @foreach($data->where('day', 2)->where('class', 1) as $class)
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
-                                            
-                                            <div class="media">
-                                                <!-- -->
-                                                <div class="post-media pull-left">
-                                                    <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
-                                                </div>
-                                                <!-- -->
-                                                <div class="media-body">
-                                                    <div class="post-header">
-                                                        <div class="post-meta">
-                                                            <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
-                                                            <a href="#" class="pull-right">
-                                                                <span class="fa-stack fa-lg" onclick="addToCart({{ json_encode($class) }})">
-                                                                    <i class="fa fa-stack-2x fa-circle-thin"></i>
-                                                                    <i class="fa fa-stack-1x fa-share-alt"></i>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                        <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
-                                                    </div>
-                                                    <div class="post-body">
-                                                        <div class="post-excerpt">
-                                                            <p>{{ $class['description'] }}</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="post-footer">
-                                                        <span class="post-readmore">
-                                                            <i class="fa fa-microphone"></i> <strong>{{ $class['instructor'] }}</strong>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <!-- -->
-                                            </div>
-                                        </article>
-                                    @endforeach
+                                        @foreach($data->where('day', 2)->where('class', 1) as $class)
+
+                                        @endforeach
                                     </div>
                                 </div>
                                 <div id="tab-lv22-second" class="tab-pane fade">
                                     <div class="timeline">
-                                    @foreach($data->where('day', 2)->where('class', 2) as $class)
-                                        <article class="post-wrap" data-animation="fadeInUp" data-animation-delay="300">
-                                            
-                                            <div class="media">
-                                                <!-- -->
-                                                <div class="post-media pull-left">
-                                                    <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
-                                                </div>
-                                                <!-- -->
-                                                <div class="media-body">
-                                                    <div class="post-header">
-                                                        <div class="post-meta">
-                                                            <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
-                                                            <a href="#" class="pull-right">
-                                                                <span class="fa-stack fa-lg" onclick="addToCart({{ json_encode($class) }})">
-                                                                    <i class="fa fa-stack-2x fa-circle-thin"></i>
-                                                                    <i class="fa fa-stack-1x fa-share-alt"></i>
-                                                                </span>
-                                                            </a>
-                                                        </div>
-                                                        <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
-                                                    </div>
-                                                    <div class="post-body">
-                                                        <div class="post-excerpt">
-                                                            <p>{{ $class['description'] }}</p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="post-footer">
-                                                        <span class="post-readmore">
-                                                            <i class="fa fa-microphone"></i> <strong>{{ $class['instructor'] }}</strong>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <!-- -->
-                                            </div>
-                                        </article>
-                                    @endforeach
+                                        @foreach($data->where('day', 2)->where('class', 2) as $class)
+
+                                        @endforeach
                                     </div>
                                 </div>
 
@@ -585,6 +494,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                         <th>Instructor</th>
                                                         <th>Day</th>
                                                         <th>Price</th>
+                                                        <th></th>
                                                     </tr>
                                                     @foreach($carts as $cart)
                                                         <tr>
@@ -592,6 +502,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                             <td>{{ $cart->instructor }}</td>
                                                             <td>{{ $cart->day }}</td>
                                                             <td>&#8358; {{ $cart->price }}</td>
+                                                            <td><a href="{{ url('remove_class/' . $cart->class_id) }}">Remove</a></td>
                                                         </tr>
                                                     @endforeach
                                                     <tr>
@@ -599,10 +510,11 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                         <th id="price_bag" value="{{ $carts->pluck('price')->sum() }}">&#8358; {{ $carts->pluck('price')->sum() }}</th>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="3"><a href="#" class="pull-right btn btn-success" onclick="checkout()">Checkout now</a></td>
+                                                        <td colspan="3"><a href="#" class="pull-right btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Checkout now</a></td>
                                                     </tr>
                                                 </tbody>
-                                            </table>          
+                                            </table>   
+
                                         </div>
                                     </div>
                                 </div>
@@ -1152,6 +1064,43 @@ Moreover, we have table of honor where professional display their cakes to show 
     });
 
 </script>
+
+
+<button type="button" class="btn btn-primary" >Open modal for @mdo</button>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Name:</label>
+            <input type="text" class="form-control" id="recipiexnt-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Email:</label>
+            <input type="text" class="form-control" value="" id="recipiexnt-email">
+          </div>
+          <div class="form-group">
+            <label for="recipient-name" class="form-control-label">Phone Number:</label>
+            <input type="text" class="form-control" id="recipiexnt-phone">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" onclick="checkout()" class="btn btn-primary">Continue Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>    
 
 </body>
 </html>

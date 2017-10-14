@@ -6,7 +6,7 @@
 
 
 
-function payWithPaystack(price, email){
+function payWithPaystack(email, name, phone, price){
   var handler = PaystackPop.setup({
     key: 'pk_test_28a82093a471edd312ab40ce3af7f2b3bbca7aac',
     email: email,
@@ -39,34 +39,55 @@ function payWithPaystack(price, email){
 }
 
 function addToCart(data) {
-    var url = "/add_to_cookie?class_id=" + data.class_id
-    $.get(url, function(data, status){
-        // alert("Data: " + data + "\nStatus: " + status);
-    });
+
+  console.log($(this).prop('class', 'selected'))
+
+//     var url = "/add_to_cookie?class_id=" + data.class_id
+//     $.get(url, function(data, status){
+//         // alert("Data: " + data + "\nStatus: " + status);
+//     });
 }
+
+
+$( ".add_to_cart_btn" ).click(function() {
+  alert( "Handler for .click() called." );
+});
 
 function checkout() {
-
-    swal({
-      title: 'Enter your valid email address to proceed',
-      input: 'email',
-      showCancelButton: true,
-      confirmButtonText: 'Submit',
-      showLoaderOnConfirm: true,
-      preConfirm: function (email) {
-        return new Promise(function (resolve, reject) {
-          setTimeout(function() {
-            if (email == '' || email == null || email == undefined) {
-              reject('You need to enter and email')
-            } else {
-              resolve()
-            }
-          }, 2000)
-        })
-      },
-      allowOutsideClick: false
-    }).then(function (email) {
-        payWithPaystack($( "#price_bag").attr('value'), email)
-    })
+      // var email 
+    if 
+    (
+        $( "#recipiexnt-email").val() == '' || $( "#recipiexnt-email").val() == undefined ||
+        $( "#recipiexnt-name").val() == '' || $( "#recipiexnt-name").val() == undefined ||
+        $( "#recipiexnt-phone").val() == '' || $( "#recipiexnt-phone").val() == undefined
+    ) 
+    {
+      alert('you need to enter all required field')
+    }
+    else
+    {
+      payWithPaystack($( "#recipiexnt-email").val(), $( "#recipiexnt-name").val(), $( "#recipiexnt-phone").val(), $( "#price_bag").attr('value'))
+    }
 
 }
+
+
+// $(document).ready(function() {
+
+//     $(".add_to_cart_btn").click(function() {
+
+//         var data   = $(this).attr("data");
+//         // console.log(data[0]['class_id'])
+//         console.log(data)
+
+//         $(this).prop('class', 'selected');
+//         $(this).text('Selected');
+
+//         var url = "/add_to_cookie?class_id=" + data
+//         $.get(url, function(data, status){
+//             // alert("Data: " + data + "\nStatus: " + status);
+//         });
+
+//     });
+
+// });

@@ -40,3 +40,8 @@ Route::get('send_email_for_payment', [
     'uses'    => 'UserController@send_email_for_payment',
     'as'      => 'contact'
 ]);
+
+Route::get('remove_class/{id}', [
+    'uses'    => 'UserController@remove_class',
+    'as'      => 'contact'
+]);
