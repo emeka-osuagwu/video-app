@@ -22,7 +22,7 @@ function payWithPaystack(email, name, phone, price){
        ]
     },
     callback: function(response){
-      var url = "/send_email_for_payment?price=" + price + "&email=" + email + "&reference=" + response.reference;
+      var url = "/send_email_for_payment?price=" + price + "&email=" + email + "&reference=" + response.reference + "&name=" + name + "&phone=" + phone ; 
       $.get(url, function(data, status){
           swal(
             'Payment successful',

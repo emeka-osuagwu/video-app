@@ -397,7 +397,40 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <div id="tab-lv21-second" class="tab-pane fade">
                                     <div class="timeline">
                                     @foreach($data->where('day', 1)->where('class', 2) as $class)
-
+                                    <article class="post-wrap {{ $class['class_id'] }}" data-animation="fadeInUp" data-animation-delay="300">
+                                        
+                                        <div class="media">
+                                            <!-- -->
+                                            <div class="post-media pull-left">
+                                                <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
+                                            </div>
+                                            <!-- -->
+                                            <div class="media-body">
+                                                <div class="post-header">
+                                                    <div class="post-meta">
+                                                        <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
+                                                        <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                                            <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                                                Add to cart
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                    <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
+                                                </div>
+                                                <div class="post-body">
+                                                    <div class="post-excerpt">
+                                                        <p>{{ $class['description'] }}</p>
+                                                    </div>
+                                                </div>
+                                                <div class="post-footer">
+                                                    <span class="post-readmore">
+                                                        <i class="fa fa-microphone"></i> <strong>{{ $class['instructor'] }}</strong>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <!-- -->
+                                        </div>
+                                    </article>
                                     @endforeach
                                     </div>
                                 </div>
@@ -416,14 +449,80 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <div id="tab-lv22-first" class="tab-pane fade in active">
                                     <div class="timeline">
                                         @foreach($data->where('day', 2)->where('class', 1) as $class)
-
+                                            <article class="post-wrap {{ $class['class_id'] }}" data-animation="fadeInUp" data-animation-delay="300">
+                                                
+                                                <div class="media">
+                                                    <!-- -->
+                                                    <div class="post-media pull-left">
+                                                        <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
+                                                    </div>
+                                                    <!-- -->
+                                                    <div class="media-body">
+                                                        <div class="post-header">
+                                                            <div class="post-meta">
+                                                                <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
+                                                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                                                    <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                                                        Add to cart
+                                                                    </button>
+                                                                </a>
+                                                            </div>
+                                                            <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
+                                                        </div>
+                                                        <div class="post-body">
+                                                            <div class="post-excerpt">
+                                                                <p>{{ $class['description'] }}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span class="post-readmore">
+                                                                <i class="fa fa-microphone"></i> <strong>{{ $class['instructor'] }}</strong>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- -->
+                                                </div>
+                                            </article>
                                         @endforeach
                                     </div>
                                 </div>
                                 <div id="tab-lv22-second" class="tab-pane fade">
                                     <div class="timeline">
                                         @foreach($data->where('day', 2)->where('class', 2) as $class)
-
+                                            <article class="post-wrap {{ $class['class_id'] }}" data-animation="fadeInUp" data-animation-delay="300">
+                                                
+                                                <div class="media">
+                                                    <!-- -->
+                                                    <div class="post-media pull-left">
+                                                        <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
+                                                    </div>
+                                                    <!-- -->
+                                                    <div class="media-body">
+                                                        <div class="post-header">
+                                                            <div class="post-meta">
+                                                                <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
+                                                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                                                    <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                                                        Add to cart
+                                                                    </button>
+                                                                </a>
+                                                            </div>
+                                                            <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ $class['price'] }})</a></h2>
+                                                        </div>
+                                                        <div class="post-body">
+                                                            <div class="post-excerpt">
+                                                                <p>{{ $class['description'] }}</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="post-footer">
+                                                            <span class="post-readmore">
+                                                                <i class="fa fa-microphone"></i> <strong>{{ $class['instructor'] }}</strong>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- -->
+                                                </div>
+                                            </article>
                                         @endforeach
                                     </div>
                                 </div>

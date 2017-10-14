@@ -18,6 +18,8 @@ class CreateOrderTable extends Migration
             $table->string('email');
             $table->string('reference');
             $table->string('price');
+            $table->string('name');
+            $table->string('phone');
             $table->jsonb('carts');
             $table->timestamps();
         });

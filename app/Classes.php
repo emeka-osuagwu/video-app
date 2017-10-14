@@ -14,6 +14,8 @@ class Classes extends Model
         'email',
         'price',
         'carts',
-        'reference'
+        'reference',
+        'phone',
+        'name'
     ];
 }
