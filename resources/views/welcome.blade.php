@@ -34,10 +34,11 @@
     <![endif]-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/js/index.js"></script>
     <script src="https://js.paystack.co/v1/inline.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.all.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.10.1/sweetalert2.min.js" rel="stylesheet">
+    <script src="/js/account.js"></script>
+    <script src="/js/index.js"></script>
 </head>
 
 <style>
@@ -600,17 +601,21 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                             <td>{{ $cart->name }}</td>
                                                             <td>{{ $cart->instructor }}</td>
                                                             <td>{{ $cart->day }}</td>
-                                                            <td>&#8358; {{ $cart->price }}</td>
+                                                            <td>&#8358; {{ number_format($cart->price, 2) }}</td>
                                                             <td><a href="{{ url('remove_class/' . $cart->class_id) }}">Remove</a></td>
                                                         </tr>
                                                     @endforeach
                                                     <tr>
                                                         <th colspan="3"><span class="pull-right">Registration Fee </span></th>
-                                                        <th id="price_bag">&#8358; {{number_format(2000,2)}}</th>
+                                                        <th id="">&#8358; {{number_format(2000,2)}}</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th colspan="3"><span class="pull-right">Item Amount </span></th>
+                                                        <th id="" >&#8358; {{ number_format($carts->pluck('price')->sum(), 2) }}</th>
                                                     </tr>
                                                     <tr>
                                                         <th colspan="3"><span class="pull-right">Total </span></th>
-                                                        <th id="price_bag" value="{{ $carts->pluck('price')->sum() }}">&#8358; {{ number_format($carts->pluck('price')->sum()) }}</th>
+                                                        <th id="price_bag" value="{{ number_format(2000 + $carts->pluck('price')->sum(), 2) }}">&#8358; {{ number_format(2000 + $carts->pluck('price')->sum(), 2) }}</th>
                                                     </tr>
                                                     <tr>
                                                         <td colspan="3"><a href="#" class="pull-right btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Checkout now</a></td>

@@ -1,12 +1,25 @@
 
 (function(){
   // addToCart({"class_id":1,"name":"fnbvdfjvdfvdfvhdfvdfdfdf","start_time":"1pm","end_time":"2pm","price":"2000","period":"day1","instructor":"emeka"})
-
 })();
 
 
+    function addCommas(nStr)
+{
+  nStr += '';
+  x = nStr.split('.');
+  x1 = x[0];
+  x2 = x.length > 1 ? '.' + x[1] : '';
+  var rgx = /(\d+)(\d{3})/;
+  while (rgx.test(x1)) {
+    x1 = x1.replace(rgx, '$1' + ',' + '$2');
+  }
+  return x1 + x2;
+}
+
 
 function payWithPaystack(email, name, phone, price){
+
   var handler = PaystackPop.setup({
     key: 'pk_test_28a82093a471edd312ab40ce3af7f2b3bbca7aac',
     email: email,
@@ -22,13 +35,13 @@ function payWithPaystack(email, name, phone, price){
        ]
     },
     callback: function(response){
+      swal(
+        'Payment successful',
+        'A confirmation email has been sent to you mail address',
+        'success'
+      )
       var url = "/send_email_for_payment?price=" + price + "&email=" + email + "&reference=" + response.reference + "&name=" + name + "&phone=" + phone ; 
       $.get(url, function(data, status){
-          swal(
-            'Payment successful',
-            'A confirmation email has been sent to you mail address',
-            'success'
-          )
       });
     },
     onClose: function(){
@@ -54,40 +67,68 @@ $( ".add_to_cart_btn" ).click(function() {
 });
 
 function checkout() {
-      // var email 
-    if 
-    (
-        $( "#recipiexnt-email").val() == '' || $( "#recipiexnt-email").val() == undefined ||
-        $( "#recipiexnt-name").val() == '' || $( "#recipiexnt-name").val() == undefined ||
-        $( "#recipiexnt-phone").val() == '' || $( "#recipiexnt-phone").val() == undefined
-    ) 
-    {
-      alert('you need to enter all required field')
-    }
-    else
-    {
-      payWithPaystack($( "#recipiexnt-email").val(), $( "#recipiexnt-name").val(), $( "#recipiexnt-phone").val(), $( "#price_bag").attr('value'))
-    }
+
+      var price = $( "#price_bag").attr('value');
+      // console.log(price)
+      // console.log(accounting.formatMoney(price, { symbol: "",  format: "%v %s" }))
+      // console.log(accounting.formatMoney(price))
+      console.log(accounting.unformat(price))
+
+  
+      if 
+      (
+          $( "#recipiexnt-email").val() == '' || $( "#recipiexnt-email").val() == undefined ||
+          $( "#recipiexnt-name").val() == '' || $( "#recipiexnt-name").val() == undefined ||
+          $( "#recipiexnt-phone").val() == '' || $( "#recipiexnt-phone").val() == undefined
+      ) 
+      {
+        alert('you need to enter all required field')
+      }
+      else
+      {
+        payWithPaystack($( "#recipiexnt-email").val(), $( "#recipiexnt-name").val(), $( "#recipiexnt-phone").val(), accounting.unformat(price))
+      }
 
 }
 
 
-// $(document).ready(function() {
+$(document).ready(function() {
 
-//     $(".add_to_cart_btn").click(function() {
+    // $(".add_to_cart_btn").click(function() {
 
-//         var data   = $(this).attr("data");
-//         // console.log(data[0]['class_id'])
-//         console.log(data)
+    //     var data   = $(this).attr("data");
+    //     // console.log(data[0]['class_id'])
+    //     console.log(data)
 
-//         $(this).prop('class', 'selected');
-//         $(this).text('Selected');
+    //     $(this).prop('class', 'selected');
+    //     $(this).text('Selected');
 
-//         var url = "/add_to_cookie?class_id=" + data
-//         $.get(url, function(data, status){
-//             // alert("Data: " + data + "\nStatus: " + status);
-//         });
+    //     var url = "/add_to_cookie?class_id=" + data
+    //     $.get(url, function(data, status){
+    //         // alert("Data: " + data + "\nStatus: " + status);
+    //     });
 
-//     });
+    // });
 
-// });
+    // checkout()
+
+    // payWithPaystack('emeka@jrher.com', 'ewewe', 'wewe', 'rer')
+
+        //   function addCommas(nStr)
+        //   {
+        //     nStr += '';
+        //     x = nStr.split('.');
+        //     x1 = x[0];
+        //     x2 = x.length > 1 ? '.' + x[1] : '';
+        //     var rgx = /(\d+)(\d{3})/;
+        //     while (rgx.test(x1)) {
+        //       x1 = x1.replace(rgx, '$1' + ',' + '$2');
+        //     }
+        //     return x1 + x2;
+        //   }
+        // console.log($("#price_bag").attr('value'))
+        // console.log(typeof(parseInt(addCommas($( "#price_bag").attr('value')))))
+        // console.log(Number($("#price_bag").attr('value')))
+        // console.log(Number($("#price_bag").attr('value')))
+
+});
