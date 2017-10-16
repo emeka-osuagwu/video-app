@@ -23,7 +23,8 @@ class UserController extends Controller
 				"end_time" => "11:00",
 				"instructor" => "Tosan Jemide / Cakes by Tosan",
 				"start_time" => "10:00",
-				"description" => "You will see how African's cake maestro will infuse his creativity in making large roses your will never be the same"
+				"description" => "You will see how African's cake maestro will infuse his creativity in making large roses your will never be the same",
+				"instructor_image" => "tosan.jpeg",
 			],
 			[
 				"day" => 1,
@@ -34,7 +35,9 @@ class UserController extends Controller
 				"end_time" => "12:00",
 				"instructor" => "Tosan Jemide / Cakes by Tosan",
 				"start_time" => "11:15",
-				"description" => "Get inspired from a small beginning to a large mindset"
+				"description" => "Get inspired from a small beginning to a large mindset",
+				"instructor_image" => "tosan.jpeg",
+
 			],
 			[
 				"day" => 1,
@@ -45,7 +48,8 @@ class UserController extends Controller
 				"end_time" => "1:00",
 				"instructor" => "Abby Babalola – Honeyfrosting cakes",
 				"start_time" => "12:15",
-				"description" => "Learn how to make Swiss Meringue Buttercream icing that is rich and have creamy flavor"
+				"description" => "Learn how to make Swiss Meringue Buttercream icing that is rich and have creamy flavor",
+				"instructor_image" => "abby.jpeg",
 			],
 			[
 				"day" => 1,
@@ -56,7 +60,8 @@ class UserController extends Controller
 				"end_time" => "16:15",
 				"instructor" => "Tosan Jemide / Cakes by Tosan",
 				"start_time" => "13:15",
-				"description" => "Learn sugar anatomy model face eyes hear nose make up gele and time permiting accents all without mold"
+				"description" => "Learn sugar anatomy model face eyes hear nose make up gele and time permiting accents all without mold",
+				"instructor_image" => "tosan.jpeg",
 			],
 
 
@@ -72,7 +77,8 @@ class UserController extends Controller
 				"end_time" => "9:45",
 				"instructor" => "James Oluwabiyi James",
 				"start_time" => "9:00",
-				"description" => "You will learn how to select perfect colours on your cake, how to make rainbow cakes, how to colour your fondant and the secret of colourful cakes"
+				"description" => "You will learn how to select perfect colours on your cake, how to make rainbow cakes, how to colour your fondant and the secret of colourful cakes",
+				"instructor_image" => "james.jpeg",
 			],
 			[
 				"day" => 1,
@@ -83,7 +89,8 @@ class UserController extends Controller
 				"end_time" => "11:15",
 				"instructor" => "Bidemi Bidokwu / Cake et all",
 				"start_time" => "10:00",
-				"description" => "You will learn how to select perfect colours on your cake, how to make rainbow cakes, how to colour your fondant and the secret of colourful cakes"
+				"description" => "You will learn how to select perfect colours on your cake, how to make rainbow cakes, how to colour your fondant and the secret of colourful cakes",
+				"instructor_image" => "bidemi.jpeg",
 			],
 			[
 				"day" => 1,
@@ -94,7 +101,8 @@ class UserController extends Controller
 				"end_time" => "11:30",
 				"instructor" => "Lolade Ogunjimi / Dainty Affair",
 				"start_time" => "12:45",
-				"description" => "You will get to know elegant cake design ideas, birthday cakes, wedding cakes and plane cakes"
+				"description" => "You will get to know elegant cake design ideas, birthday cakes, wedding cakes and plane cakes",
+				"instructor_image" => "Lolade.jpeg",
 			],
 			[
 				"day" => 1,
@@ -105,7 +113,8 @@ class UserController extends Controller
 				"end_time" => "14:15",
 				"instructor" => "Yetunde Ogunbiyi / Teal And Roses",
 				"start_time" => "13:00",
-				"description" => "Learn make your cake shimmer, how to create glamorous lustre finish and also the trending cake stencilling technique"
+				"description" => "Learn make your cake shimmer, how to create glamorous lustre finish and also the trending cake stencilling technique",
+				"instructor_image" => "yetunde.jpeg",
 			],
 			[
 				"day" => 1,
@@ -116,7 +125,8 @@ class UserController extends Controller
 				"end_time" => "15:15",
 				"instructor" => "Yinka Oluwa /L & K Cake & Kenny Amakoh / Kaykes Kraft n Tools ",
 				"start_time" => "14:15",
-				"description" => "You will see how to make a shiny chocolate icing, how to make a fruit shiny and mirror glaze and ganache recipes"
+				"description" => "You will see how to make a shiny chocolate icing, how to make a fruit shiny and mirror glaze and ganache recipes",
+				"instructor_image" => "Tosan Jemide / Cakes by Tosan",
 			],
 			[
 				"day" => 1,
@@ -127,7 +137,8 @@ class UserController extends Controller
 				"end_time" => "16:45",
 				"instructor" => "Bolanle akinosun / T – Lash Cakes",
 				"start_time" => "15:30",
-				"description" => "Teaches on how to work with fondant in humid climate and through the season"
+				"description" => "Teaches on how to work with fondant in humid climate and through the season",
+				"instructor_image" => "bolanle.jpeg",
 			],
 			[
 				"day" => 2,
@@ -138,7 +149,8 @@ class UserController extends Controller
 				"end_time" => "10:45",
 				"instructor" => "Tarela Okene / Dripples Cakes",
 				"start_time" => "09:30",
-				"description" => "Tarela Okene will demonstrate traditional wedding cakes; learn the step and the tips of making glamorous wedding cake. Take your traditional wedding cakes miles ahead"
+				"description" => "Tarela Okene will demonstrate traditional wedding cakes; learn the step and the tips of making glamorous wedding cake. Take your traditional wedding cakes miles ahead",
+				"instructor_image" => "tarela.jpeg",
 			],
 			[
 				"day" => 2,
@@ -149,7 +161,8 @@ class UserController extends Controller
 				"end_time" => "12:15",
 				"instructor" => "Tarela Okene / Dripples Cakes",
 				"start_time" => "11:00",
-				"description" => "learn cake decorating, art textile construction and design by tarela Okene"
+				"description" => "learn cake decorating, art textile construction and design by tarela Okene",
+				"instructor_image" => "tarela.jpeg",
 			],
 			[
 				"day" => 2,
@@ -160,7 +173,8 @@ class UserController extends Controller
 				"end_time" => "03:30",
 				"instructor" => "Siku Adewuyi queen of cakes",
 				"start_time" => "13:30",
-				"description" => "learn how Geode cakes is made, how to make rock candy and its recipe"
+				"description" => "learn how Geode cakes is made, how to make rock candy and its recipe",
+				"instructor_image" => "siku.jpeg",
 			],
 
 
@@ -175,7 +189,8 @@ class UserController extends Controller
 				"end_time" => "09:45",
 				"instructor" => "Kemi Oluboro / El-royalitors",
 				"start_time" => "09:00",
-				"description" => "learn the tranding classis cake design"
+				"description" => "learn the tranding classis cake design",
+				"instructor_image" => "kemi.jpeg",
 			],
 			[
 				"day" => 2,
@@ -186,7 +201,8 @@ class UserController extends Controller
 				"end_time" => "11:15",
 				"instructor" => "Uwem Akpan – Barter Splash",
 				"start_time" => "10:00",
-				"description" => "Step by step instruction for making Gelatin Ball with twist, how to make a rope cake border and a twist on cake"
+				"description" => "Step by step instruction for making Gelatin Ball with twist, how to make a rope cake border and a twist on cake",
+				"instructor_image" => "Uwem.jpeg",
 			],
 			[
 				"day" => 2,
@@ -197,7 +213,8 @@ class UserController extends Controller
 				"end_time" => "12:45",
 				"instructor" => "Chef lorna Opanubi – Lorna Goodies",
 				"start_time" => "11:30",
-				"description" => "Learn Jamaican way of making a jerk chicken and fishes in pepper"
+				"description" => "Learn Jamaican way of making a jerk chicken and fishes in pepper",
+				"instructor_image" => "lorna.jpeg",
 			],
 			[
 				"day" => 2,
@@ -208,7 +225,8 @@ class UserController extends Controller
 				"end_time" => "14:00",
 				"instructor" => "Yinka Oluwa Kenny Amakoh",
 				"start_time" => "13:00",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "",
+				"instructor_image" => "Tosan Jemide / Cakes by Tosan",
 			],
 			[
 				"day" => 2,
@@ -219,7 +237,8 @@ class UserController extends Controller
 				"end_time" => "15:45",
 				"instructor" => "Kema Abuede / Conspicuous Cakes",
 				"start_time" => "14:30",
-				"description" => "Explore cake structure and cake stand, how to orient the cake stand in a Topsy Turvy cake structure and cake framing learn the illusion"
+				"description" => "Explore cake structure and cake stand, how to orient the cake stand in a Topsy Turvy cake structure and cake framing learn the illusion",
+				"instructor_image" => "kema.jpeg",
 			],
 			[
 				"day" => 2,
@@ -228,9 +247,10 @@ class UserController extends Controller
 				"price" => "0",
 				"class_id" => 15,
 				"end_time" => "5:00",
-				"instructor" => "Cake flair & Tunde Vaughan",
+				"instructor" => "",
 				"start_time" => "4:00",
-				"description" => "Featuring: Tosan Jemide, Siku Adewuyi, Yetunde Ogunbiyi, Anu Ajayi, Rollins Ogehenekaro"
+				"description" => "Featuring: Tosan Jemide, Siku Adewuyi, Yetunde Ogunbiyi, Anu Ajayi, Rollins Ogehenekaro",
+				"instructor_image" => "tosan.jpeg",
 			],
 
 		];

@@ -3,7 +3,7 @@
     <div class="media">
         <!-- -->
         <div class="post-media pull-left">
-            <img src="assets/img/preview/avatar-v2-1.jpg" alt="" class="media-object" />
+            <img src="assets/img/images/{{ $class['instructor_image'] }}" alt="" class="media-object" />
         </div>
         <!-- -->
         <div class="media-body">
@@ -17,14 +17,14 @@
                             </button>
                         </a>
                     @else
-                        <a  class="pull-right">
-                            <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
-                                Free Class
-                            </button>
-                        </a>
                     @endif
                 </div>
-                <h2 class="post-title"><a href="#">{{ $class['name'] }} (&#8358; {{ number_format( (int) $class['price'], 2) }})</a></h2>
+                <h2 class="post-title"><a href="#">{{ $class['name'] }} 
+                    @if($class['price'] > 0)
+                        (&#8358; {{ number_format( (int) $class['price'], 2) }})</a></h2>
+                    @else
+                        (Free Class)
+                    @endif
             </div>
             <div class="post-body">
                 <div class="post-excerpt">
