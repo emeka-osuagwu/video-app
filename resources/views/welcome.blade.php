@@ -257,11 +257,11 @@ Moreover, we have table of honor where professional display their cakes to show 
                             <div class="col-sm-6 col-xs-6">
                                 <div class="thumbnail no-border no-padding" data-animation="fadeInLeft" data-animation-delay="100">
                                     <div class="media">
-                                        <img src="assets/img/preview/about-sm-1.jpg" alt="">
+                                        <img src="http://www.zamzamacademy.com/wp-content/uploads/2016/12/video-zamzam-770x436.png" alt="">
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
-                                                    <p class="caption-buttons"><a href="assets/img/preview/about-lg-1.jpg" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
+                                                    <p class="caption-buttons"><a href="https://youtu.be/J_ub7Etch2U" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -272,11 +272,11 @@ Moreover, we have table of honor where professional display their cakes to show 
                             <div class="col-sm-6 col-xs-6">
                                 <div class="thumbnail no-border no-padding" data-animation="fadeInDown" data-animation-delay="200">
                                     <div class="media">
-                                        <img src="assets/img/preview/about-sm-2.jpg" alt="">
+                                        <img src="http://www.zamzamacademy.com/wp-content/uploads/2016/12/video-zamzam-770x436.png" alt="">
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
-                                                    <p class="caption-buttons"><a href="assets/img/preview/about-lg-2.jpg" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
+                                                    <p class="caption-buttons"><a href="https://youtu.be/by3yRdlQvzs" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -287,11 +287,11 @@ Moreover, we have table of honor where professional display their cakes to show 
                             <div class="col-sm-6 col-xs-6">
                                 <div class="thumbnail no-border no-padding" data-animation="fadeInRight" data-animation-delay="300">
                                     <div class="media">
-                                        <img src="assets/img/preview/about-sm-3.jpg" alt="">
+                                        <img src="http://www.zamzamacademy.com/wp-content/uploads/2016/12/video-zamzam-770x436.png" alt="">
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
-                                                    <p class="caption-buttons"><a href="assets/img/preview/about-lg-3.jpg" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
+                                                    <p class="caption-buttons"><a href="https://youtu.be/by3yRdlQvzs" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -302,11 +302,11 @@ Moreover, we have table of honor where professional display their cakes to show 
                             <div class="col-sm-6 col-xs-6">
                                 <div class="thumbnail no-border no-padding" data-animation="fadeInUp" data-animation-delay="400">
                                     <div class="media">
-                                        <img src="assets/img/preview/about-sm-4.jpg" alt="">
+                                        <img src="http://www.zamzamacademy.com/wp-content/uploads/2016/12/video-zamzam-770x436.png" alt="">
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
-                                                    <p class="caption-buttons"><a href="assets/img/preview/about-lg-4.jpg" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
+                                                    <p class="caption-buttons"><a href="https://youtu.be/by3yRdlQvzs" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -711,13 +711,6 @@ Moreover, we have table of honor where professional display their cakes to show 
                             </div>
                             <div class="caption">
                                 <p>A man his craft and the world Meet Tosan Jemide @cakesbytosan - Africa's Cake Maestro After an earlier career in fashion, little did he know his creativity will take him before kings and presidents. After mastering his craft for many years, he will be teaching his unique skills 👏🏼eye for fine details ability to create masterpieces #billionairecake date</p>
-                                <ul class="social-line list-inline text-center">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -752,13 +745,6 @@ Moreover, we have table of honor where professional display their cakes to show 
                             </div>
                             <div class="caption">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed vel velit</p>
-                                <ul class="social-line list-inline text-center">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -793,13 +779,6 @@ Moreover, we have table of honor where professional display their cakes to show 
                             </div>
                             <div class="caption">
                                 <p>Its all about learning new trending cake technique. Join talented Tarela as she teaches new skill. When Tarela teach everyone listens</p>
-                                <ul class="social-line list-inline text-center">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -834,13 +813,6 @@ Moreover, we have table of honor where professional display their cakes to show 
                             </div>
                             <div class="caption">
                                 <p>many years ago, mama left her native Jamaica to follow the love of her live. Has she has truly love Nigeria, and establish catering school of repute lorna-goodie. she will be shearing her passion for her native Jamaica deshe</p>
-                                <ul class="social-line list-inline text-center">
-                                    <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#" class="google"><i class="fa fa-google-plus"></i></a></li>
-                                    <li><a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-                                    <li><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>

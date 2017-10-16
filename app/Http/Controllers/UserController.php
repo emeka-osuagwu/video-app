@@ -252,6 +252,30 @@ class UserController extends Controller
 				"description" => "Featuring: Tosan Jemide, Siku Adewuyi, Yetunde Ogunbiyi, Anu Ajayi, Rollins Ogehenekaro",
 				"instructor_image" => "tosan.jpeg",
 			],
+			[
+				"day" => 3,
+				"name" => "Pricing and standing out competitive market",
+				"class" => 1,
+				"price" => "0",
+				"class_id" => 15,
+				"end_time" => "5:00",
+				"instructor" => "",
+				"start_time" => "4:00",
+				"description" => "Featuring: Tosan Jemide, Siku Adewuyi, Yetunde Ogunbiyi, Anu Ajayi, Rollins Ogehenekaro",
+				"instructor_image" => "tosan.jpeg",
+			],
+			[
+				"day" => 3,
+				"name" => "Pricing and standing out competitive market",
+				"class" => 2,
+				"price" => "0",
+				"class_id" => 15,
+				"end_time" => "5:00",
+				"instructor" => "",
+				"start_time" => "4:00",
+				"description" => "Featuring: Tosan Jemide, Siku Adewuyi, Yetunde Ogunbiyi, Anu Ajayi, Rollins Ogehenekaro",
+				"instructor_image" => "tosan.jpeg",
+			],
 
 		];
 
