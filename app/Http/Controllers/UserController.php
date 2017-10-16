@@ -16,58 +16,85 @@ class UserController extends Controller
 		$data = [
 			[
 				"day" => 1,
-				"name" => "Big Roses - My method",
+				"name" => "Demo Course: Big Roses - My method",
 				"class" => 1,
 				"price" => "2500",
 				"class_id" => 1,
 				"end_time" => "11:00",
 				"instructor" => "Tosan Jemide / Cakes by Tosan",
 				"start_time" => "10:00",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "You will see how African's cake maestro will infuse his creativity in making large roses your will never be the same"
 			],
 			[
 				"day" => 1,
-				"name" => "My Story – Get Inspired",
+				"name" => "Demo Course: My Story – Get Inspired",
 				"class" => 1,
 				"price" => "2500",
 				"class_id" => 2,
 				"end_time" => "12:00",
 				"instructor" => "Tosan Jemide / Cakes by Tosan",
 				"start_time" => "11:15",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "Get inspired from a small beginning to a large mindset"
+			],
+			[
+				"day" => 1,
+				"name" => "Demo Course: Swiss Meringue Buttercream and kisses",
+				"class" => 1,
+				"price" => "1500",
+				"class_id" => 2,
+				"end_time" => "1:00",
+				"instructor" => "Abby Babalola – Honeyfrosting cakes",
+				"start_time" => "12:15",
+				"description" => "Learn how to make Swiss Meringue Buttercream icing that is rich and have creamy flavor"
 			],
 			[
 				"day" => 1,
 				"name" => "Hands On Course: Real Life Facial Structure, Make Up And Gele of Omalicha!!! – Learn Sugar Anatomy",
 				"class" => 1,
-				"price" => "25,000",
+				"price" => "25000",
 				"class_id" => 3,
 				"end_time" => "16:15",
 				"instructor" => "Tosan Jemide / Cakes by Tosan",
 				"start_time" => "13:15",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "Learn sugar anatomy model face eyes hear nose make up gele and time permiting accents all without mold"
+			],
+
+
+
+
+
+			[
+				"day" => 1,
+				"name" => "Elegant cake design",
+				"class" => 2,
+				"price" => "2000",
+				"class_id" => 4,
+				"end_time" => "9:45",
+				"instructor" => "James Oluwabiyi James",
+				"start_time" => "9:00",
+				"description" => "You will learn how to select perfect colours on your cake, how to make rainbow cakes, how to colour your fondant and the secret of colourful cakes"
 			],
 			[
 				"day" => 1,
-				"name" => "Outstanding Water Colour Cakes",
+				"name" => "Demo Course: Outstanding Water Colour Cakes",
 				"class" => 2,
 				"price" => "2000",
 				"class_id" => 4,
 				"end_time" => "11:15",
 				"instructor" => "Bidemi Bidokwu / Cake et all",
 				"start_time" => "10:00",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "You will learn how to select perfect colours on your cake, how to make rainbow cakes, how to colour your fondant and the secret of colourful cakes"
 			],
 			[
 				"day" => 1,
-				"name" => "Elegant Party Cakes",
+				"name" => "Demo Course: Elegant Party Cakes",
 				"class" => 2,
 				"price" => "2000",
 				"class_id" => 5,
 				"end_time" => "11:30",
 				"instructor" => "Lolade Ogunjimi / Dainty Affair",
 				"start_time" => "12:45",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "You will get to know elegant cake design ideas, birthday cakes, wedding cakes and plane cakes"
 			],
 			[
 				"day" => 1,
@@ -78,18 +105,18 @@ class UserController extends Controller
 				"end_time" => "14:15",
 				"instructor" => "Yetunde Ogunbiyi / Teal And Roses",
 				"start_time" => "13:00",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "Learn make your cake shimmer, how to create glamorous lustre finish and also the trending cake stencilling technique"
 			],
 			[
 				"day" => 1,
-				"name" => "Course: Mirror Glazing And Ganache",
+				"name" => "Demo Course: Mirror Glazing And Ganache",
 				"class" => 2,
 				"price" => "2500",
 				"class_id" => 7,
 				"end_time" => "15:15",
 				"instructor" => "Yinka Oluwa /L & K Cake & Kenny Amakoh / Kaykes Kraft n Tools ",
 				"start_time" => "14:15",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "You will see how to make a shiny chocolate icing, how to make a fruit shiny and mirror glaze and ganache recipes"
 			],
 			[
 				"day" => 1,
@@ -100,7 +127,7 @@ class UserController extends Controller
 				"end_time" => "16:45",
 				"instructor" => "Bolanle akinosun / T – Lash Cakes",
 				"start_time" => "15:30",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "Teaches on how to work with fondant in humid climate and through the season"
 			],
 			[
 				"day" => 2,
@@ -111,55 +138,70 @@ class UserController extends Controller
 				"end_time" => "10:45",
 				"instructor" => "Tarela Okene / Dripples Cakes",
 				"start_time" => "09:30",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "Tarela Okene will demonstrate traditional wedding cakes; learn the step and the tips of making glamorous wedding cake. Take your traditional wedding cakes miles ahead"
 			],
 			[
 				"day" => 2,
-				"name" => "Learn New Skills",
+				"name" => "Demo Course: Tapestry Design",
 				"class" => 1,
-				"price" => "0",
+				"price" => "2500",
 				"class_id" => 10,
 				"end_time" => "12:15",
 				"instructor" => "Tarela Okene / Dripples Cakes",
 				"start_time" => "11:00",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "learn cake decorating, art textile construction and design by tarela Okene"
 			],
 			[
 				"day" => 2,
-				"name" => "Geode Cake and Sugar Topper",
+				"name" => "Hands On Course: Geode cakes and sugar Topper",
 				"class" => 1,
-				"price" => "25,000",
-				"class_id" => 11,
-				"end_time" => "15:30",
-				"instructor" => "Siku Adewuyi / Cake And Candy Confectionaries",
-				"start_time" => "12:30",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"price" => "25000",
+				"class_id" => 10,
+				"end_time" => "03:30",
+				"instructor" => "Siku Adewuyi queen of cakes",
+				"start_time" => "13:30",
+				"description" => "learn how Geode cakes is made, how to make rock candy and its recipe"
 			],
+
+
+
+
 			[
 				"day" => 2,
-				"name" => "Demo Free Class Course: Classic Cake Design",
+				"name" => "Classic Cake Design",
 				"class" => 2,
 				"price" => "0",
 				"class_id" => 12,
 				"end_time" => "09:45",
-				"instructor" => "Kemi Oluboro / CEO at Crown.io & Patricia Atake / CEO at Crown.io",
+				"instructor" => "Kemi Oluboro / El-royalitors",
 				"start_time" => "09:00",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "learn the tranding classis cake design"
 			],
 			[
 				"day" => 2,
-				"name" => "Demo Course: Jamaican Jerk Chicken And Fish In different Peppers",
+				"name" => "Demo Course: Gelatin Ball with Twist",
 				"class" => 2,
 				"price" => "2000",
-				"class_id" => 13,
-				"end_time" => "12:45",
-				"instructor" => "Chef Lorna Opanubi / Lornar Goodies",
-				"start_time" => "11:30",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"class_id" => 10,
+				"end_time" => "11:15",
+				"instructor" => "Uwem Akpan – Barter Splash",
+				"start_time" => "10:00",
+				"description" => "Step by step instruction for making Gelatin Ball with twist, how to make a rope cake border and a twist on cake"
 			],
 			[
 				"day" => 2,
-				"name" => "Demo Catch Them Young Class -Cake decorating",
+				"name" => "Demo Course: Jamaican Jerk Chicken and Fish in difference pepper",
+				"class" => 2,
+				"price" => "2000",
+				"class_id" => 10,
+				"end_time" => "12:45",
+				"instructor" => "Chef lorna Opanubi – Lorna Goodies",
+				"start_time" => "11:30",
+				"description" => "Learn Jamaican way of making a jerk chicken and fishes in pepper"
+			],
+			[
+				"day" => 2,
+				"name" => "Catch Them Young Class -Cake decorating",
 				"class" => 2,
 				"price" => "0",
 				"class_id" => 14,
@@ -170,15 +212,27 @@ class UserController extends Controller
 			],
 			[
 				"day" => 2,
-				"name" => "Demo Gravity Defying Cake -illusion",
+				"name" => "Demo Course: Gravity Defying Cake -illusion",
 				"class" => 2,
 				"price" => "2000",
 				"class_id" => 15,
 				"end_time" => "15:45",
 				"instructor" => "Kema Abuede / Conspicuous Cakes",
 				"start_time" => "14:30",
-				"description" => "fjdfjdhfjdfhvdjfhdjfhdjfhjhfjdhfjdfhjdfhjdfhdjh"
+				"description" => "Explore cake structure and cake stand, how to orient the cake stand in a Topsy Turvy cake structure and cake framing learn the illusion"
 			],
+			[
+				"day" => 2,
+				"name" => "Pricing and standing out competitive market",
+				"class" => 2,
+				"price" => "0",
+				"class_id" => 15,
+				"end_time" => "5:00",
+				"instructor" => "Cake flair & Tunde Vaughan",
+				"start_time" => "4:00",
+				"description" => "Featuring: Tosan Jemide, Siku Adewuyi, Yetunde Ogunbiyi, Anu Ajayi, Rollins Ogehenekaro"
+			],
+
 		];
 
 		return collect($data);
