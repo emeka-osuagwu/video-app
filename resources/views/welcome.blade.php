@@ -691,7 +691,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <div class="hex-deg">
                                     <div class="hex-inner">
                                         <div class="media">
-                                            <img src="assets/img/preview/speaker-1.jpg" alt="">
+                                            <img src="assets/img/images/tosan.jpeg" alt="">
                                             <div class="caption hovered">
                                                 <div class="caption-wrapper div-table">
                                                     <div class="caption-inner div-cell">
@@ -710,7 +710,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <p class="caption-category">Cakes by Tosan</p>
                             </div>
                             <div class="caption">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed vel velit</p>
+                                <p>A man his craft and the world Meet Tosan Jemide @cakesbytosan - Africa's Cake Maestro After an earlier career in fashion, little did he know his creativity will take him before kings and presidents. After mastering his craft for many years, he will be teaching his unique skills 👏🏼eye for fine details ability to create masterpieces #billionairecake date</p>
                                 <ul class="social-line list-inline text-center">
                                     <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
@@ -732,7 +732,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                         <div class="hex-deg">
                                             <div class="hex-inner">
                                                 <div class="media">
-                                                    <img src="assets/img/preview/speaker-2.jpg" alt="">
+                                                    <img src="assets/img/images/siku.jpeg" alt="">
                                                     <div class="caption hovered">
                                                         <div class="caption-wrapper div-table">
                                                             <div class="caption-inner div-cell">
@@ -773,7 +773,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                         <div class="hex-deg">
                                             <div class="hex-inner">
                                                 <div class="media">
-                                                    <img src="assets/img/preview/speaker-3.jpg" alt="">
+                                                    <img src="assets/img/images/tarela.jpeg" alt="">
                                                     <div class="caption hovered">
                                                         <div class="caption-wrapper div-table">
                                                             <div class="caption-inner div-cell">
@@ -792,7 +792,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <p class="caption-category">Dripples Cakes</p>
                             </div>
                             <div class="caption">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed vel velit</p>
+                                <p>Its all about learning new trending cake technique. Join talented Tarela as she teaches new skill. When Tarela teach everyone listens</p>
                                 <ul class="social-line list-inline text-center">
                                     <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
@@ -814,7 +814,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                         <div class="hex-deg">
                                             <div class="hex-inner">
                                                 <div class="media">
-                                                    <img src="assets/img/preview/speaker-4.jpg" alt="">
+                                                    <img src="assets/img/images/lorna.jpeg" alt="">
                                                     <div class="caption hovered">
                                                         <div class="caption-wrapper div-table">
                                                             <div class="caption-inner div-cell">
@@ -829,11 +829,11 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 </div>
                             </div>
                             <div class="caption before-media">
-                                <h3 class="caption-title">Bidemi Bidokwu</h3>
+                                <h3 class="caption-title">Lorna Opanubi</h3>
                                 <p class="caption-category">Cake Et-al</p>
                             </div>
                             <div class="caption">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed vel velit</p>
+                                <p>many years ago, mama left her native Jamaica to follow the love of her live. Has she has truly love Nigeria, and establish catering school of repute lorna-goodie. she will be shearing her passion for her native Jamaica deshe</p>
                                 <ul class="social-line list-inline text-center">
                                     <li><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
