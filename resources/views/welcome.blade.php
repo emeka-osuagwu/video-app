@@ -127,18 +127,11 @@
                                     <p class="caption-text">
                                         <a class="btn btn-theme btn-theme-xl scroll-to" href="#register" data-animation="flipInY" data-animation-delay="600"> Register <i class="fa fa-arrow-circle-right"></i></a>
                                     </p>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-              
-
-
-      
-
             </div>
             </div>
 
@@ -214,14 +207,14 @@
                 </h1>
                 <div class="row">
                     <div class="col-lg-8">
-                        <p data-animation="fadeInUp" data-animation-delay="300">The kogsy sugarcraft n cake exhibition is West Africa's largest and longest running.
+                        <p data-animation="fadeInUp" data-animation-delay="300">The kogsy cake n sugarcraft exhibition is West Africa's largest and longest running.
 
 
-The theme for this year exhibition is Fashion cakes inspired by celebrities.
+The theme for this year exhibition is Fashion cakes inspired by celebrities-Musicians and OAPs.
 
-The exhibition will feature renowned world class sugarcrft artist, massive sales of sugarcraft tools and books, artist display a various cake design, celebrity class
+The exhibition will feature renowned world class sugarcrft artist, massive sales of cake tools and books, artist display a various cake design, celebrity classes
 
-Moreover, we have table of honor where professional display their cakes to show the trending cake fashion invoke and a cake booth where baking tools are display for bake to know the Latest  baking tools, there also avenue for men-tee and mentor to meet for new cake maker to learn from them</p>
+Moreover, we have table of honor where professional display their cakes to show the trending cake fashion invokes and a cake booth where baking tools are display for bake to know the Latest  baking tools, there also avenue for men-tee and mentor to meet for new cake maker to learn from them</p>
                         <p class="btn-row">
                             <a href="#register" class="btn btn-theme btn-theme-xl scroll-to" data-animation="flipInY" data-animation-delay="200">Register <i class="fa fa-arrow-circle-right"></i></a><!--
                             -->
@@ -326,10 +319,7 @@ Moreover, we have table of honor where professional display their cakes to show 
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 pull-left">
-                        <h1 class="section-title">
-                            <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-star fa-stack-1x"></i></span></span>
-                            <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">Event Schedule <small>/ Register Early, Classes Sell Out</small></span>
-                        </h1>
+    
                     </div>
                  
                 </div>
@@ -565,18 +555,8 @@ Moreover, we have table of honor where professional display their cakes to show 
                 </h1>
                 <div class="partners-carousel" data-animation="fadeInUp" data-animation-delay="300">
                     <div class="owl-carousel">
-                        <div><a href="#"><img src="assets/img/partner/light/partner-1.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-2.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-3.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-4.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-5.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-6.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-1.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-2.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-3.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-4.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-5.png" alt=""/></a></div>
-                        <div><a href="#"><img src="assets/img/partner/light/partner-6.png" alt=""/></a></div>
+                        <div><a href="#"><img src="assets/img/images/1.jpeg" alt=""/></a></div>
+                        <div><a href="#"><img src="assets/img/images/2.jpeg" alt=""/></a></div>
                     </div>
                 </div>
                 <div class="text-center margin-top">
@@ -1014,7 +994,7 @@ Moreover, we have table of honor where professional display their cakes to show 
 </script>
 
 
-<button type="button" class="btn btn-primary" >Open modal for @mdo</button>
+<!-- <button type="button" class="btn btn-primary" >Open modal for @mdo</button> -->
 
 
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -1040,7 +1020,7 @@ Moreover, we have table of honor where professional display their cakes to show 
             <label for="recipient-name" class="form-control-label">Phone Number:</label>
             <input type="text" class="form-control" id="recipiexnt-phone">
           </div>
-        </form>
+        </form> 
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

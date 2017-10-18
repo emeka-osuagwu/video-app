@@ -77,7 +77,7 @@ class UserController extends Controller
 				"end_time" => "9:45",
 				"instructor" => "James Oluwabiyi James",
 				"start_time" => "9:00",
-				"description" => "You will learn how to select perfect colours on your cake, how to make rainbow cakes, how to colour your fondant and the secret of colourful cakes",
+				"description" => "Quick and easy technique",
 				"instructor_image" => "james.jpeg",
 			],
 			[
@@ -101,7 +101,8 @@ class UserController extends Controller
 				"end_time" => "11:30",
 				"instructor" => "Lolade Ogunjimi / Dainty Affair",
 				"start_time" => "12:45",
-				"description" => "You will get to know elegant cake design ideas, birthday cakes, wedding cakes and plane cakes",
+				"description" => "NIGERIA- Education is the heart of Kogsy Cake Exhibition
+Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Affairs Bakery  at Kogsy Cake Exhibition Wednesday 26th October 10.00-11.15am - Elegant Party Cakes, 11.30-12.45 perfectly crafted cake borders, watch her transform cakes using her signature skills to elegant, neat work of art . Venue Classique Event Centre 7a Kudirat Abiola Road fee N2000 each. You don't want to miss her Classes!!!! tel 08160267738",
 				"instructor_image" => "Lolade.jpeg",
 			],
 			[
@@ -113,7 +114,7 @@ class UserController extends Controller
 				"end_time" => "14:15",
 				"instructor" => "Yetunde Ogunbiyi / Teal And Roses",
 				"start_time" => "13:00",
-				"description" => "Learn make your cake shimmer, how to create glamorous lustre finish and also the trending cake stencilling technique",
+				"description" => "Learn make your cake shimmer, how to create glamorous lustre finish and also the trending cake stencilling technique with rose gold. international gust instructor",
 				"instructor_image" => "yetunde.jpeg",
 			],
 			[
@@ -125,7 +126,7 @@ class UserController extends Controller
 				"end_time" => "15:15",
 				"instructor" => "Yinka Oluwa /L & K Cake & Kenny Amakoh / Kaykes Kraft n Tools ",
 				"start_time" => "14:15",
-				"description" => "You will see how to make a shiny chocolate icing, how to make a fruit shiny and mirror glaze and ganache recipes",
+				"description" => "You will see how to make a shiny chocolate icing, how to make cake mirror glaze and ganache recipes",
 				"instructor_image" => "Tosan Jemide / Cakes by Tosan",
 			],
 			[
@@ -254,10 +255,10 @@ class UserController extends Controller
 			],
 			[
 				"day" => 3,
-				"name" => "Pricing and standing out competitive market",
+				"name" => "extra 1",
 				"class" => 1,
-				"price" => "0",
-				"class_id" => 15,
+				"price" => "21000000",
+				"class_id" => 16,
 				"end_time" => "5:00",
 				"instructor" => "",
 				"start_time" => "4:00",
@@ -266,10 +267,10 @@ class UserController extends Controller
 			],
 			[
 				"day" => 3,
-				"name" => "Pricing and standing out competitive market",
+				"name" => "extra 2",
 				"class" => 2,
-				"price" => "0",
-				"class_id" => 15,
+				"price" => "22000000",
+				"class_id" => 17,
 				"end_time" => "5:00",
 				"instructor" => "",
 				"start_time" => "4:00",
@@ -296,6 +297,9 @@ class UserController extends Controller
     	$data = $this->class_data();
 		$carts = collect(json_decode(isset($_COOKIE['class'])) ? json_decode($_COOKIE['class']) : []);
 
+
+
+		// return dd($carts->pluck('class_id')->contains(17));
 		return view('welcome', compact('data', 'carts'));
 	}
 
