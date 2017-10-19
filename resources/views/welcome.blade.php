@@ -103,30 +103,33 @@
     </header>
     <!-- /HEADER -->
 
+
+    <style>
+        
+        .add_image {
+            background-image: url('assets/img/images/kogsybackground.jpg');
+            background-size: cover;
+        }
+
+    </style>
+
     <!-- Content area -->
     <div class="content-area">
 
-        <div id="main">
+        <div id="main" class="">
         <!-- SLIDER -->
-        <section class="page-section no-padding background-img-slider">
+        <section class="page-section no-padding background-img-slider add_image">
             <div class="container">
 
             <div id="main-slider" class="owl-carousel owl-theme">
 
                 <!-- Slide -->
-                <div class="item page text-center slide0">
+                <div class="item page text-center slide0 add_image">
                     <div class="caption">
                         <div class="container">
-                            <div class="div-table">
+                            <div class="div-table" >
                                 <div class="div-cell">
-                                    <h2 class="caption-title" data-animation="fadeInDown" data-animation-delay="100"><span>October 25-26, 2017</span></h2>
-                                    <h3 class="caption-subtitle" data-animation="fadeInUp" data-animation-delay="300">Kogsy Cake and Sugarcraft Exhibition</h3>
-                                    <div class="countdown-wrapper">
-                                        <div id="defaultCountdown" class="defaultCountdown clearfix"></div>
-                                    </div>
-                                    <p class="caption-text">
-                                        <a class="btn btn-theme btn-theme-xl scroll-to" href="#register" data-animation="flipInY" data-animation-delay="600"> Register <i class="fa fa-arrow-circle-right"></i></a>
-                                    </p>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -319,7 +322,13 @@ Moreover, we have table of honor where professional display their cakes to show 
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 pull-left">
-    
+                        @foreach($data->where('day', 3) as $class)
+                            <h1 class="section-title">
+                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">click</a>
+                            <!--     <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-star fa-stack-1x"></i></span></span>
+                                <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">Event Schedule <small>/ Register Early, Classes Sell Out</small></span> -->
+                            </h1>
+                        @endforeach
                     </div>
                  
                 </div>
@@ -912,11 +921,11 @@ Moreover, we have table of honor where professional display their cakes to show 
             <div class="container text-center">
                 <div class="clearfix">
                     <ul class="social-line list-inline">
-                        <li data-animation="flipInY" data-animation-delay="100"><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li data-animation="flipInY" data-animation-delay="100"><a href="https://twitter.com/kogsysugarcraft?lang=en" class="twitter"><i class="fa fa-twitter"></i></a></li>
                         
-                        <li data-animation="flipInY" data-animation-delay="300"><a href="#" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li data-animation="flipInY" data-animation-delay="300"><a href="https://web.facebook.com/KogsySugarcraftCentre/?_rdc=1&_rdr" class="facebook"><i class="fa fa-facebook"></i></a></li>
                        
-                        <li data-animation="flipInY" data-animation-delay="500"><a href="#" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                        <li data-animation="flipInY" data-animation-delay="500"><a href="https://www.instagram.com/kogsysugarcraft/" class="instagram"><i class="fa fa-instagram"></i></a></li>
                        
                        
                     </ul>

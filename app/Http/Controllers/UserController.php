@@ -44,7 +44,7 @@ class UserController extends Controller
 				"name" => "Demo Course: Swiss Meringue Buttercream and kisses",
 				"class" => 1,
 				"price" => "1500",
-				"class_id" => 2,
+				"class_id" => 22,
 				"end_time" => "1:00",
 				"instructor" => "Abby Babalola – Honeyfrosting cakes",
 				"start_time" => "12:15",

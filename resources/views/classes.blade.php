@@ -11,18 +11,26 @@
             <div class="post-header">
                 <div class="post-meta">
                     <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
-                    @if($carts->pluck('class_id')->contains([17, 16]) == true)
-                        class 1
-                        @if($class['price'] > 0)
-                            <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
-                                <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
-                                    Add to cart
-                                </button>
-                            </a>
+                    @if($class['class_id'] == 1 || $class['class_id'] == 2 || $class['class_id'] == 3)
+                        
+                        @if($carts->pluck('class_id')->contains(17) == true)
+                        
+                            removed
+                        
                         @else
+
+                            @if($class['price'] > 0)
+                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                    <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                        Add to cart
+                                    </button>
+                                </a>
+                            @else
+                            @endif
 
                         @endif
                     @else
+                        
                         @if($class['price'] > 0)
                             <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
                                 <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
@@ -30,12 +38,8 @@
                                 </button>
                             </a>
                         @else
-
                         @endif
                     @endif
-
-
-
                 </div>
                 <h2 class="post-title"><a href="#">{{ $class['name'] }} 
                     @if($class['price'] > 0)
