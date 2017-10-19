@@ -324,10 +324,10 @@ Moreover, we have table of honor where professional display their cakes to show 
                     <div class="col-md-8 pull-left">
                         @foreach($data->where('day', 3) as $class)
                             <h1 class="section-title">
-                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">click</a>
-                            <!--     <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-star fa-stack-1x"></i></span></span>
-                                <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">Event Schedule <small>/ Register Early, Classes Sell Out</small></span> -->
+                                <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-star fa-stack-1x"></i></span></span>
+                                <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">{{$class['name']}} <small>/ {{$class['description']}}</small><a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">add to cart</a></span>
                             </h1>
+                            <!-- <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">click</a> -->
                         @endforeach
                     </div>
                  
@@ -815,63 +815,6 @@ Moreover, we have table of honor where professional display their cakes to show 
 
       
 
-        <section class="page-section image" id="register">
-            <div class="container">
-                <h1 class="section-title">
-                    <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-ticket fa-stack-1x"></i></span></span>
-                    <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">Register now <small> / dont mıss event!</small></span>
-                </h1>
-                <form id="registration-form" name="registration-form" class="registration-form" action="#" method="post">
-                    <div class="row">
-                        <div class="col-sm-12 form-alert"></div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="form-group" data-animation="fadeInUp" data-animation-delay="200">
-                                <input
-                                        type="text" class="form-control input-name"
-                                        data-toggle="tooltip" title="Name is required"
-                                        placeholder="Name and Surname"/>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="form-group" data-animation="fadeInUp" data-animation-delay="400">
-                                <input
-                                        type="text" class="form-control input-email"
-                                        data-toggle="tooltip" title="Mail is required"
-                                        placeholder="Your Mail Here"/>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="form-group" data-animation="fadeInUp" data-animation-delay="600">
-                                <input
-                                        type="text" class="form-control input-phone"
-                                        placeholder="Your Phone Number"/>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <div class="form-group selectpicker-wrapper" data-animation="fadeInUp" data-animation-delay="800">
-                                <select
-                                        class="selectpicker input-price" data-live-search="true" data-width="100%"
-                                        data-toggle="tooltip" title="Select Your Price Tab">
-                                    <option>Select Your Price Tab</option>
-                                    <option>$100</option>
-                                    <option>$200</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12 overflowed">
-                            <div class="text-center margin-top">
-                                <button
-                                        data-animation="flipInY" data-animation-delay="100"
-                                        class="btn btn-theme btn-theme-xl submit-button" type="submit"
-                                        > Register Now <i class="fa fa-arrow-circle-right"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-                
-            </div>
-        </section>
-
         <!-- PAGE LOCATION -->
         <section class="page-section" id="location">
             <div class="container full-width gmap-background">
@@ -894,15 +837,9 @@ Moreover, we have table of honor where professional display their cakes to show 
                 <!-- Google map -->
                 <div class="google-map">
                     <div id="map-canvas"></div>
-
-
                 </div>
                
-                    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCohQaCO9P-KOAAd50oxj_lcHyB8_1ZEFY&callback=initMap"
-  type="text/javascript">
-      
-     
-  </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCohQaCO9P-KOAAd50oxj_lcHyB8_1ZEFY&callback=initMap" type="text/javascript"></script>
                
                 <!-- /Google map -->
 
