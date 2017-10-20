@@ -170,7 +170,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 				"name" => "Hands On Course: Geode cakes and sugar Topper",
 				"class" => 1,
 				"price" => "25000",
-				"class_id" => 10,
+				"class_id" => 210,
 				"end_time" => "03:30",
 				"instructor" => "Siku Adewuyi queen of cakes",
 				"start_time" => "13:30",

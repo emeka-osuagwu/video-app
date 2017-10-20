@@ -13,6 +13,24 @@
                     <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
                     @if($class['class_id'] == 1 || $class['class_id'] == 2 || $class['class_id'] == 3)
                         
+                        @if($carts->pluck('class_id')->contains(16) == true)
+                        
+                            removed
+                        
+                        @else
+
+                            @if($class['price'] > 0)
+                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                    <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                        Add to cart
+                                    </button>
+                                </a>
+                            @else
+                            @endif
+
+                        @endif
+                    @elseif($class['class_id'] == 9 || $class['class_id'] == 10 || $class['class_id'] == 210)
+
                         @if($carts->pluck('class_id')->contains(17) == true)
                         
                             removed
@@ -29,6 +47,7 @@
                             @endif
 
                         @endif
+
                     @else
                         
                         @if($class['price'] > 0)
