@@ -836,7 +836,10 @@ Moreover, we have table of honor where professional display their cakes to show 
 
                 <!-- Google map -->
                 <div class="google-map">
-                    <div id="map-canvas"></div>
+                    <div id="map-canvas">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3963.312250768826!2d3.3563071!3d6.6080674!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b924a9baeec93%3A0x592e46b9591d1646!2sClassique+Events+Place!5e0!3m2!1sen!2sng!4v1508494177315" width="1678" height="527" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
                 </div>
                
                 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCohQaCO9P-KOAAd50oxj_lcHyB8_1ZEFY&callback=initMap" type="text/javascript"></script>
