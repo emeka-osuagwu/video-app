@@ -90,10 +90,9 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="#speakers">Speakers</a></li>
+                    <li><a href="#speakers">Instructors</a></li>
                     <li><a href="#price">Price</a></li>
                     <li><a href="#location">Location</a></li>
-                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
             <!-- /Navigation -->
@@ -219,7 +218,7 @@ The exhibition will feature renowned world class sugarcrft artist, massive sales
 
 Moreover, we have table of honor where professional display their cakes to show the trending cake fashion invokes and a cake booth where baking tools are display for bake to know the Latest  baking tools, there also avenue for men-tee and mentor to meet for new cake maker to learn from them</p>
                         <p class="btn-row">
-                            <a href="#register" class="btn btn-theme btn-theme-xl scroll-to" data-animation="flipInY" data-animation-delay="200">Register <i class="fa fa-arrow-circle-right"></i></a><!--
+                            <a href="#schedule" class="btn btn-theme btn-theme-xl scroll-to" data-animation="flipInY" data-animation-delay="200">Register <i class="fa fa-arrow-circle-right"></i></a><!--
                             -->
                         </p>
                     </div>
@@ -325,7 +324,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                         @foreach($data->where('day', 3) as $class)
                             <h1 class="section-title">
                                 <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-star fa-stack-1x"></i></span></span>
-                                <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">{{$class['name']}} <small>/ {{$class['description']}}</small><a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">add to cart</a></span>
+                                <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">{{$class['name']}} <small>/ {{$class['description']}} at &#8358;{{$class['price']}} </small><a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">add to cart</a></span>
                             </h1>
                             <!-- <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">click</a> -->
                         @endforeach
@@ -569,7 +568,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                     </div>
                 </div>
                 <div class="text-center margin-top">
-                    <a data-animation="flipInY" data-animation-delay="500" href="#" class="btn btn-theme"><i class="fa fa-thumbs-up"></i> Become a sponsor</a>
+                    <!-- <a data-animation="flipInY" data-animation-delay="500" href="#" class="btn btn-theme"><i class="fa fa-thumbs-up"></i> Become a sponsor</a> -->
                 </div>
             </div>
         </section>
@@ -600,11 +599,10 @@ Moreover, we have table of honor where professional display their cakes to show 
                             </div>
                         </div>
                         <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec
-                                cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper
-                                tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis
-                                in feugiat mollis, libero eros</p>
-                            <h4 class="media-heading">by jThemes Studio</h4>
+                            <p>
+                                Kogsy proved they are the first and the best in the country, they set the mark and defined their brand
+                            </p>
+                            <h4 class="media-heading">by Edith Oxumba</h4>
                         </div>
                     </div>
 
@@ -623,11 +621,8 @@ Moreover, we have table of honor where professional display their cakes to show 
                             </div>
                         </div>
                         <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec
-                                cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper
-                                tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis
-                                in feugiat mollis, libero eros</p>
-                            <h4 class="media-heading">by jThemes Studio</h4>
+                            <p>We had a great time at show and as opportunity to meet our end users. it did have a wonderfull effect on our brand.</p>
+                            <h4 class="media-heading">by Bernard Dangote Flour Mills</h4>
                         </div>
                     </div>
 
@@ -646,11 +641,8 @@ Moreover, we have table of honor where professional display their cakes to show 
                             </div>
                         </div>
                         <div class="media-body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae diam metus. Donec
-                                cursus magna eget sem convallis facilisis. Vestibulum dictum nibh at ullamcorper
-                                tincidunt. Phasellus scelerisque nisl non ullamcorper pellentesque. Nunc sagittis, felis
-                                in feugiat mollis, libero eros</p>
-                            <h4 class="media-heading">by jThemes Studio</h4>
+                            <p>The Kogsy cake and sugarcraft exhibition was a fantastic experience for us. it provided the perfect platform to introduce our brand to thousands of targeted new customers which did boast our sales dramatically after the event.</p>
+                            <h4 class="media-heading">by Ramil - First Blends LTD</h4>
                         </div>
                     </div>
 
