@@ -484,7 +484,9 @@ Moreover, we have table of honor where professional display their cakes to show 
                                                         <th id="price_bag" value="{{ number_format(2000 + $carts->pluck('price')->sum(), 2) }}">&#8358; {{ number_format(2000 + $carts->pluck('price')->sum(), 2) }}</th>
                                                     </tr>
                                                     <tr>
-                                                        <td colspan="3"><a href="#" class="pull-right btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Checkout now</a></td>
+                                                        @if($carts->count() > 0)
+                                                            <td colspan="3"><a href="#" class="pull-right btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Checkout now</a></td>
+                                                        @endif
                                                     </tr>
                                                 </tbody>
                                             </table>   
@@ -591,7 +593,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                     <div class="hex-deg">
                                         <div class="hex-deg">
                                             <div class="hex-inner">
-                                                <img class="img-responsive" src="assets/img/preview/avatar-1.jpg" alt=""/>
+                                                <!-- <img class="img-responsive" src="assets/img/preview/avatar-1.jpg" alt=""/> -->
                                             </div>
                                         </div>
                                     </div>
@@ -613,7 +615,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                     <div class="hex-deg">
                                         <div class="hex-deg">
                                             <div class="hex-inner">
-                                                <img class="img-responsive" src="assets/img/preview/avatar-2.jpg" alt=""/>
+                                                <!-- <img class="img-responsive" src="assets/img/preview/avatar-2.jpg" alt=""/> -->
                                             </div>
                                         </div>
                                     </div>
@@ -633,7 +635,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                     <div class="hex-deg">
                                         <div class="hex-deg">
                                             <div class="hex-inner">
-                                                <img class="img-responsive" src="assets/img/preview/avatar-3.jpg" alt=""/>
+                                                <!-- <img c666lass="img-responsive" src="assets/img/preview/avatar-3.jpg" alt=""/> -->
                                             </div>
                                         </div>
                                     </div>
@@ -658,7 +660,7 @@ Moreover, we have table of honor where professional display their cakes to show 
             <div class="container">
                 <h1 class="section-title">
                     <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-user fa-stack-1x"></i></span></span>
-                    <span data-animation="fadeInUp" data-animation-delay="500" class="title-inner">Event Speakers <small> / meet with greatest cake makers in Africa</small></span>
+                    <span data-animation="fadeInUp" data-animation-delay="500" class="title-inner">Event Instructors <small> / meet with greatest cake makers in Africa</small></span>
                 </h1>
 
                 <!-- Speakers row -->
@@ -691,7 +693,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <p class="caption-category">Cakes by Tosan</p>
                             </div>
                             <div class="caption">
-                                <p>A man his craft and the world Meet Tosan Jemide @cakesbytosan - Africa's Cake Maestro After an earlier career in fashion, little did he know his creativity will take him before kings and presidents. After mastering his craft for many years, he will be teaching his unique skills 👏🏼eye for fine details ability to create masterpieces #billionairecake date</p>
+                                <p>Artistic painting on cakes-Siku Adewuyi-Cake n Candy. Meet the Queen of all Queens. This cake diva reigns supreme in her expertise all things ethnic delicate finish</p>
                             </div>
                         </div>
                     </div>

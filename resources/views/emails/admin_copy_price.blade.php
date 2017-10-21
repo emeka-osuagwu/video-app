@@ -7,6 +7,26 @@
         <table class="table table-striped table-hover table-bordered">
             <tbody>
                 <tr>
+                    <th>User Name</th>
+                    <th>User Email</th>
+                    <th>User Phone</th>
+                    <th>Payment reference</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>{{ $data['name'] }}</td>
+                    <td>{{ $data['email'] }}</td>
+                    <td>{{ $data['phone'] }}</td>
+                    <td>{{ $data['reference'] }}</td>
+                </tr>
+            </tbody>
+        </table>          
+    </div>
+
+    <div class="container">
+        <table class="table table-striped table-hover table-bordered">
+            <tbody>
+                <tr>
                     <th>Class Name</th>
                     <th>Instructor</th>
                     <th>Day</th>

@@ -178,9 +178,6 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 				"instructor_image" => "siku.jpeg",
 			],
 
-
-
-
 			[
 				"day" => 2,
 				"name" => "Classic Cake Design",
@@ -346,18 +343,54 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 
     public function send_email_for_payment(Request $request)
     {
+
+    	$carts = collect(json_decode(isset($_COOKIE['class'])) ? json_decode($_COOKIE['class']) : []);
+
+    	$carts_ids = $carts->pluck('class_id'); 
+
+    	$carts->pluck('class_id');
+
+    	if ($carts_ids->contains(16) == true) 
+    	{
+    		$carts_ids->push(1);
+    		$carts_ids->push(2);
+    		$carts_ids->push(3);
+    	}
+
+    	if ($carts_ids->contains(17) == true) 
+    	{
+    		$carts_ids->push(9);
+    		$carts_ids->push(10);
+    		$carts_ids->push(210);
+    	}
+
+    	if (($key = array_search(16, $carts_ids->toArray())) !== false) {
+    	    unset($carts_ids[$key]);
+    	}
+
+    	if (($key = array_search(17, $carts_ids->toArray())) !== false) {
+    	    unset($carts_ids[$key]);
+    	}
+
+    	$carts = $this->class_data()->whereIn('class_id', $carts_ids);
+
     	$data = [
 	    	"name" => $request->name,
 	    	"phone" => $request->phone,
 	    	"email" => $request->email,
 	    	"price" => $request->price,
 	    	"reference" => $request->reference,
-	    	"carts" => collect(json_decode(isset($_COOKIE['class'])) ? json_decode($_COOKIE['class']) : [])
+	    	"carts" => $carts
     	];
 
     	Mail::send('emails.price', ['data' => $data], function ($message) use ($data) {
     	    $message->from(env('MAIL_FROM_ADDRESS'), 'Welcome to Kogsysugarcraft');
     	    $message->to($data['email'])->subject('Payment Confirmation');
+    	});
+
+    	Mail::send('emails.admin_copy_price', ['data' => $data], function ($message) use ($data) {
+    	    $message->from(env('MAIL_FROM_ADDRESS'), 'Email Notification');
+    	    $message->to(env('MAIL_FROM_ADDRESS'))->subject('User Payment Receipt');
     	});
 
     	$data['created_at'] = Carbon::now();
