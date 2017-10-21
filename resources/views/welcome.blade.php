@@ -256,7 +256,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
-                                                    <p class="caption-buttons"><a href="https://youtu.be/J_ub7Etch2U" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
+                                                    <p class="caption-buttons"><a href="https://youtu.be/YVaEvV_zrDw" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -271,7 +271,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
-                                                    <p class="caption-buttons"><a href="https://youtu.be/by3yRdlQvzs" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
+                                                    <p class="caption-buttons"><a href="https://youtu.be/LFCPo12lt8o" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -286,7 +286,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
-                                                    <p class="caption-buttons"><a href="https://youtu.be/by3yRdlQvzs" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
+                                                    <p class="caption-buttons"><a href="https://youtu.be/g7eR9ShlSpM" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
@@ -301,7 +301,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
-                                                    <p class="caption-buttons"><a href="https://youtu.be/by3yRdlQvzs" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
+                                                    <p class="caption-buttons"><a href="https://youtu.be/MQaL0ndx-PE" class="btn caption-zoom" data-gal="prettyPhoto"><i class="fa fa-search"></i></a></p>
                                                 </div>
                                             </div>
                                         </div>
