@@ -18,6 +18,19 @@
 }
 
 
+$(document).ready(function() {
+    
+    // var price = $( "#price_bag").attr('value');
+    // // console.log(price)
+    // // console.log(accounting.formatMoney(price, { symbol: "",  format: "%v %s" }))
+    // // console.log(accounting.formatMoney(price))
+    // alert(accounting.unformat(price) * 100)
+    // console.log(accounting.unformat(parseFloat(price) * 100))
+
+    // payWithPaystack('emeka@jrher.com', 'ewewe', 'wewe', )
+
+});
+
 function payWithPaystack(email, name, phone, price){
 
   var handler = PaystackPop.setup({
@@ -45,7 +58,7 @@ function payWithPaystack(email, name, phone, price){
       });
     },
     onClose: function(){
-        alert('window closed');
+        // alert('window closed');
     }
   });
   handler.openIframe();
@@ -86,7 +99,7 @@ function checkout() {
       }
       else
       {
-        payWithPaystack($( "#recipiexnt-email").val(), $( "#recipiexnt-name").val(), $( "#recipiexnt-phone").val(), accounting.unformat(price))
+        payWithPaystack($( "#recipiexnt-email").val(), $( "#recipiexnt-name").val(), $( "#recipiexnt-phone").val(), accounting.unformat(price) * 100)
       }
 
 }
@@ -109,10 +122,11 @@ $(document).ready(function() {
     //     });
 
     // });
+    
+    // payWithPaystack('emeka@jrher.com', 'ewewe', 'wewe', 'rer')
 
     // checkout()
 
-    // payWithPaystack('emeka@jrher.com', 'ewewe', 'wewe', 'rer')
 
         //   function addCommas(nStr)
         //   {

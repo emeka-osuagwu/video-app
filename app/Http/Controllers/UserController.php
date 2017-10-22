@@ -390,7 +390,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 
     	Mail::send('emails.admin_copy_price', ['data' => $data], function ($message) use ($data) {
     	    $message->from(env('MAIL_FROM_ADDRESS'), 'Email Notification');
-    	    $message->to(env('MAIL_FROM_ADDRESS'))->subject('User Payment Receipt');
+    	    $message->to('hkgbelee@gmail.com')->subject('User Payment Receipt');
     	});
 
     	$data['created_at'] = Carbon::now();
