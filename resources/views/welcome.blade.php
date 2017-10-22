@@ -91,7 +91,6 @@
                     <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#sponsors">Sponsors</a></li>
                     <li><a href="#speakers">Instructors</a></li>
-                    <li><a href="#price">Price</a></li>
                     <li><a href="#location">Location</a></li>
                 </ul>
             </nav>
@@ -560,7 +559,7 @@
             <div class="container">
                 <h1 class="section-title">
                     <span data-animation="flipInY" data-animation-delay="100" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-thumbs-up fa-stack-1x"></i></span></span>
-                    <span data-animation="fadeInRight" data-animation-delay="100" class="title-inner">Event Sponsors <small> / dont forget it</small></span>
+                    <span data-animation="fadeInRight" data-animation-delay="100" class="title-inner">Event Sponsors <small></small></span>
                 </h1>
                 <div class="partners-carousel" data-animation="fadeInUp" data-animation-delay="300">
                     <div class="owl-carousel">
@@ -835,7 +834,7 @@
 
                 </div>
                
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCohQaCO9P-KOAAd50oxj_lcHyB8_1ZEFY&callback=initMap" type="text/javascript"></script>
+                <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCohQaCO9P-KOAAd50oxj_lcHyB8_1ZEFY&callback=initMap" type="text/javascript"></script> -->
                
                 <!-- /Google map -->
 
