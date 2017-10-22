@@ -32,8 +32,7 @@
                     @elseif($class['class_id'] == 9 || $class['class_id'] == 10 || $class['class_id'] == 210)
 
                         @if($carts->pluck('class_id')->contains(17) == true)
-                        
-                            
+                    
                         
                         @else
 
