@@ -252,7 +252,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 			],
 			[
 				"day" => 3,
-				"name" => "Tosan all classes discounted",
+				"name" => "ALL 3 OF TOSAN’S CLASSES DISCOUNTED",
 				"class" => 1,
 				"price" => "17000",
 				"class_id" => 16,
