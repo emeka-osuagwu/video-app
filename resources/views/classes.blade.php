@@ -15,7 +15,7 @@
                         
                         @if($carts->pluck('class_id')->contains(16) == true)
                         
-                            removed
+                            
                         
                         @else
 
@@ -33,7 +33,7 @@
 
                         @if($carts->pluck('class_id')->contains(17) == true)
                         
-                            removed
+                            
                         
                         @else
 

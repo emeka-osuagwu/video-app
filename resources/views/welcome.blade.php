@@ -323,7 +323,7 @@
                         @foreach($data->where('day', 3) as $class)
                             <h1 class="section-title">
                                 <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-star fa-stack-1x"></i></span></span>
-                                <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">{{$class['name']}} <small>/ {{$class['description']}} at &#8358;{{$class['price']}} </small><a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">add to cart</a></span>
+                                <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">{{$class['name']}}<a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}"> add to cart</a><br><small>/ {{$class['description']}} at &#8358;{{$class['price']}}</small></span>
                             </h1>
                             <!-- <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}">click</a> -->
                         @endforeach
