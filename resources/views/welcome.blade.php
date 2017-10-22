@@ -209,14 +209,13 @@
                 </h1>
                 <div class="row">
                     <div class="col-lg-8">
-                        <p data-animation="fadeInUp" data-animation-delay="300">The kogsy cake n sugarcraft exhibition is West Africa's largest and longest running.
-
-
-The theme for this year exhibition is Fashion cakes inspired by celebrities-Musicians and OAPs.
-
-The exhibition will feature renowned world class sugarcrft artist, massive sales of cake tools and books, artist display a various cake design, celebrity classes
-
-Moreover, we have table of honor where professional display their cakes to show the trending cake fashion invokes and a cake booth where baking tools are display for bake to know the Latest  baking tools, there also avenue for men-tee and mentor to meet for new cake maker to learn from them</p>
+                        <p data-animation="fadeInUp" data-animation-delay="300" style="text-align: justify">
+                            The Kogsy Cake and Sugarcraft Exhibition is West Africa's  longest  running.
+                            The theme for this year is fashion inspired cakes by musician and OAPs . This exhibition will feature world class sugarcraft artist, massive sales of cake tools, books ingredients,bakery machinery etc
+                            There is a table of honour where the best cake designers will showcase their cakes. A perfect place if you are looking for a wedding or celebration cake.
+                            The business seminar  is on pricing for profit and standing out in a competitive market  
+                            The Exhibition is a perfect setting for Mentee and mentors to meet at this fair everyone has something to look forward to from beginners to professionals
+                        </p>
                         <p class="btn-row">
                             <a href="#schedule" class="btn btn-theme btn-theme-xl scroll-to" data-animation="flipInY" data-animation-delay="200">Register <i class="fa fa-arrow-circle-right"></i></a><!--
                             -->
@@ -252,7 +251,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                             <div class="col-sm-6 col-xs-6">
                                 <div class="thumbnail no-border no-padding" data-animation="fadeInLeft" data-animation-delay="100">
                                     <div class="media">
-                                        <img src="assets/img/images/v1.png" alt="">
+                                        <img src="assets/img/images/v2.png" alt="">
                                         <div class="caption hovered">
                                             <div class="caption-wrapper div-table">
                                                 <div class="caption-inner div-cell">
@@ -727,7 +726,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <p class="caption-category">Cake N Candy</p>
                             </div>
                             <div class="caption">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed vel velit</p>
+                                <p>Meet the Queen of all Queens This cake diva reigns supreme in her expertise  all things ethnic delicate finish airbrushing and painting</p>
                             </div>
                         </div>
                     </div>
@@ -795,7 +794,7 @@ Moreover, we have table of honor where professional display their cakes to show 
                                 <p class="caption-category">Cake Et-al</p>
                             </div>
                             <div class="caption">
-                                <p>many years ago, mama left her native Jamaica to follow the love of her live. Has she has truly love Nigeria, and establish catering school of repute lorna-goodie. she will be shearing her passion for her native Jamaica deshe</p>
+                                <p>Lorna Opanubi Meet Chef Lorna Opanubi Many years ago, Mama left her native Jamaica to follow the love of her life to Nigeria she established a catering school of repute Lorna Goodies she will be sharing her passion for her native Jamaican dish Jerk Chicken and fish in different peppers</p>
                             </div>
                         </div>
                     </div>
