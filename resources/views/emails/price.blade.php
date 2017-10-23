@@ -1373,7 +1373,7 @@
         <h5>Payment Confirmation: your reference number is <b>{{$data['reference']}}</b></h5>
     </div>
     
-    <div class="container">
+    <div class="container" style="width: 60%">
         <table class="table table-striped table-hover table-bordered">
             <tbody>
                 <tr>
@@ -1408,7 +1408,7 @@
     </div>
 
     <div class="container">
-        <h5>Please bring this alone</h5>
+        <h5>Thank you for the payment we look forward to seeing you and having an exciting exhibition do tell a friend and please bring this email along</h5>
     </div>
 
 </body>

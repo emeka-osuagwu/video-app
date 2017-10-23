@@ -691,7 +691,7 @@
                                 <p class="caption-category">Cakes by Tosan</p>
                             </div>
                             <div class="caption">
-                                <p>Artistic painting on cakes-Siku Adewuyi-Cake n Candy. Meet the Queen of all Queens. This cake diva reigns supreme in her expertise all things ethnic delicate finish</p>
+                                <p>A man his craft and the world, after an earlier career in fashion little did he know his creativity will take him before Kings and Presidents He is famously known as Africa's Cake Maestro</p>
                             </div>
                         </div>
                     </div>

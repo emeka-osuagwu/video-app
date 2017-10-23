@@ -70,9 +70,9 @@ class UserController extends Controller
 
 			[
 				"day" => 1,
-				"name" => "Elegant cake design",
+				"name" => "Simple Cake Design",
 				"class" => 2,
-				"price" => "2000",
+				"price" => "0",
 				"class_id" => 4,
 				"end_time" => "9:45",
 				"instructor" => "James Oluwabiyi James",
@@ -187,7 +187,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 				"end_time" => "09:45",
 				"instructor" => "Kemi Oluboro / El-royalitors",
 				"start_time" => "09:00",
-				"description" => "learn the tranding classis cake design",
+				"description" => "learn the trending classic cake design",
 				"instructor_image" => "kemi.jpeg",
 			],
 			[
@@ -211,7 +211,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 				"end_time" => "12:45",
 				"instructor" => "Chef lorna Opanubi – Lorna Goodies",
 				"start_time" => "11:30",
-				"description" => "Learn Jamaican way of making a jerk chicken and fishes in pepper",
+				"description" => "Learn Jamaican way of making Jerk chicken and fish in different peppers",
 				"instructor_image" => "lorna.jpeg",
 			],
 			[
@@ -398,7 +398,13 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 
     	Classes::create($data);
 
-    	unset($_COOKIE['class']);
+    	$class = [];
+    	
+    	$time   =  time() + 360000;
+    	$path   = '/';
+    	$data   = json_encode($class);
+    	$domain = env('host'); 
+    	setcookie("class", $data, $time, $path, $domain);
 
     }
 

@@ -27,7 +27,7 @@ $(document).ready(function() {
     // alert(accounting.unformat(price) * 100)
     // console.log(accounting.unformat(parseFloat(price) * 100))
 
-    // payWithPaystack('emeka@jrher.com', 'ewewe', 'wewe', )
+    // payWithPaystack('emeka@jrher.com', 'ewewe', 'wewe', 11111)
 
 });
 
@@ -48,14 +48,38 @@ function payWithPaystack(email, name, phone, price){
        ]
     },
     callback: function(response){
-      swal(
-        'Payment successful',
-        'A confirmation email has been sent to you mail address',
-        'success'
+      
+      swal({
+        title: 'Please wait',
+        text: '',
+        timer: 1000000,
+        onOpen: function () {
+          swal.showLoading()
+        }
+      }).then(
+        function () {
+
+          alert(1)
+        },
+        // handling the promise rejection
+        function () {
+          if (dismiss === 'timer') {
+            console.log('I was closed by the timer')
+          }
+        }
       )
+
       var url = "/send_email_for_payment?price=" + price + "&email=" + email + "&reference=" + response.reference + "&name=" + name + "&phone=" + phone ; 
       $.get(url, function(data, status){
+        swal(
+          'Payment successful',
+          'A confirmation email has been sent to you mail address',
+          'success'
+        )
+        window.location="/";
       });
+
+
     },
     onClose: function(){
         // alert('window closed');
