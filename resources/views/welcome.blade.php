@@ -235,7 +235,9 @@
                     <span data-animation="flipInY" data-animation-delay="300" class="icon-inner"><span class="fa-stack"><i class="fa rhex fa-stack-2x"></i><i class="fa fa-youtube-play fa-stack-1x"></i></span></span>
                     <span data-animation="fadeInRight" data-animation-delay="500" class="title-inner">Previous Years <small> / See how much fun we have</small></span>
                 </h1>
-                <p>Over the years attendant has been on the increase since 1996, the attendance is global; we have attendees from Nigeria, uk, USA and neighboring countries.</p>
+                <p>
+                    Over the years attendance has been on the increase since 1996 It is global from the UK, USA, Nigeria and other African Countries.
+                </p>
 
                     <!-- Display the payment button. -->
                     <button name="submit" class="btn btn-theme">Watch Videos</button>
