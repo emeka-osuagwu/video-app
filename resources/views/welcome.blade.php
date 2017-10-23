@@ -483,7 +483,7 @@
                                                     </tr>
                                                     <tr>
                                                         @if($carts->count() > 0)
-                                                            <td colspan="3"><a href="#" class="pull-right btn btn-success" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Checkout now</a></td>
+                                                            <td  colspan="3"><a href="#" class="pull-right btn btn" style="background: gray" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Checkout now</a></td>
                                                         @endif
                                                     </tr>
                                                 </tbody>

@@ -1373,7 +1373,7 @@
         <h5>Payment Confirmation: your reference number is <b>{{$data['reference']}}</b></h5>
     </div>
     
-    <div class="container" style="width: 60%">
+    <div class="container" style="width: 80%">
         <table class="table table-striped table-hover table-bordered">
             <tbody>
                 <tr>

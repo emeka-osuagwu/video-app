@@ -384,7 +384,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
     	];
 
     	Mail::send('emails.price', ['data' => $data], function ($message) use ($data) {
-    	    $message->from('exhibition@kogsysugarcraft.com.ng', 'Welcome to Kogsysugarcraft');
+    	    $message->from('exhibition@kogsysugarcraft.com.ng', 'Welcome to Kogsy Sugarcraft');
     	    $message->to($data['email'])->subject('Payment Confirmation');
     	});
 
@@ -399,7 +399,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
     	Classes::create($data);
 
     	$class = [];
-    	
+
     	$time   =  time() + 360000;
     	$path   = '/';
     	$data   = json_encode($class);
