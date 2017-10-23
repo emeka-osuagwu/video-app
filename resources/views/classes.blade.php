@@ -11,52 +11,70 @@
             <div class="post-header">
                 <div class="post-meta">
                     <span class="post-date"><i class="fa fa-clock-o"></i> {{ $class['start_time'] }} - {{ $class['end_time'] }}</span>
+                   
                     @if($class['class_id'] == 1 || $class['class_id'] == 2 || $class['class_id'] == 3)
                         
                         @if($carts->pluck('class_id')->contains(16) == true)
-                        
                             
-                        
                         @else
 
-                            @if($class['price'] > 0)
-                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                            @if($carts->pluck('class_id')->contains($class['class_id']) == true)    
+                                <a class="pull-right">
                                     <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
-                                        Add to cart
+                                        Already in cart
                                     </button>
                                 </a>
                             @else
+                                @if($class['price'] > 0)
+                                    <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                        <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                            Add to cart
+                                        </button>
+                                    </a>
+                                @endif
                             @endif
 
                         @endif
-                    @elseif($class['class_id'] == 9 || $class['class_id'] == 10 || $class['class_id'] == 210)
-
+                    @elseif($class['class_id'] == 9 || $class['class_id'] == 10 || $class['class_id'] == 210) 
                         @if($carts->pluck('class_id')->contains(17) == true)
-                    
-                        
+                            
                         @else
 
-                            @if($class['price'] > 0)
-                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                            @if($carts->pluck('class_id')->contains($class['class_id']) == true)    
+                                <a class="pull-right">
                                     <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
-                                        Add to cart
+                                        Already in cart
                                     </button>
                                 </a>
                             @else
+                                @if($class['price'] > 0)
+                                    <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                        <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                            Add to cart
+                                        </button>
+                                    </a>
+                                @endif
                             @endif
 
                         @endif
-
                     @else
-                        
-                        @if($class['price'] > 0)
-                            <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+
+                        @if($carts->pluck('class_id')->contains($class['class_id']) == true)    
+                            <a class="pull-right">
                                 <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
-                                    Add to cart
+                                    Already in cart
                                 </button>
                             </a>
                         @else
+                            @if($class['price'] > 0)
+                                <a href="{{ url('add_to_cookie?class_id=' . $class['class_id']) }}" class="pull-right">
+                                    <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                        Add to cart
+                                    </button>
+                                </a>
+                            @endif
                         @endif
+
                     @endif
                 </div>
                 <h2 class="post-title"><a href="#">{{ $class['name'] }} 

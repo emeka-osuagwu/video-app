@@ -50,9 +50,9 @@ function payWithPaystack(email, name, phone, price){
     callback: function(response){
       
       swal({
-        title: 'Please wait',
-        text: '',
-        timer: 1000000,
+        title: 'Payment successful',
+        text: 'A confirmation email is been sent to you mail address, please wait',
+        timer: 100000000,
         onOpen: function () {
           swal.showLoading()
         }
@@ -71,11 +71,11 @@ function payWithPaystack(email, name, phone, price){
 
       var url = "/send_email_for_payment?price=" + price + "&email=" + email + "&reference=" + response.reference + "&name=" + name + "&phone=" + phone ; 
       $.get(url, function(data, status){
-        swal(
-          'Payment successful',
-          'A confirmation email has been sent to you mail address',
-          'success'
-        )
+        // swal(
+        //   'Payment successful',
+        //   'A confirmation email has been sent to you mail address',
+        //   'success'
+        // )
         window.location="/";
       });
 
