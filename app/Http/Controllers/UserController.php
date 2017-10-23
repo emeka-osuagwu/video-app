@@ -266,7 +266,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 				"day" => 3,
 				"name" => "SIKU AND TARELA'S CLASSES DISCOUNTED",
 				"class" => 2,
-				"price" => "15000",
+				"price" => "17000",
 				"class_id" => 17,
 				"end_time" => "",
 				"instructor" => "Siku Adewuyi",
@@ -384,12 +384,12 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
     	];
 
     	Mail::send('emails.price', ['data' => $data], function ($message) use ($data) {
-    	    $message->from(env('MAIL_FROM_ADDRESS'), 'Welcome to Kogsysugarcraft');
+    	    $message->from('exhibition@kogsysugarcraft.com.ng', 'Welcome to Kogsysugarcraft');
     	    $message->to($data['email'])->subject('Payment Confirmation');
     	});
 
     	Mail::send('emails.admin_copy_price', ['data' => $data], function ($message) use ($data) {
-    	    $message->from(env('MAIL_FROM_ADDRESS'), 'Email Notification');
+    	    $message->from('exhibition@kogsysugarcraft.com.ng', 'Email Notification');
     	    $message->to('hkgbelee@gmail.com')->subject('User Payment Receipt');
     	});
 

@@ -785,11 +785,11 @@
                                 </div>
                             </div>
                             <div class="caption before-media">
-                                <h3 class="caption-title">Lorna Opanubi</h3>
+                                <h3 class="caption-title">Lorna Goodies</h3>
                                 <p class="caption-category">Cake Et-al</p>
                             </div>
                             <div class="caption">
-                                <p>Lorna Opanubi Meet Chef Lorna Opanubi Many years ago, Mama left her native Jamaica to follow the love of her life to Nigeria she established a catering school of repute Lorna Goodies she will be sharing her passion for her native Jamaican dish Jerk Chicken and fish in different peppers</p>
+                                <p>Lorna Goodies Meet Chef Lorna Goodies Many years ago, Mama left her native Jamaica to follow the love of her life to Nigeria she established a catering school of repute Lorna Goodies she will be sharing her passion for her native Jamaican dish Jerk Chicken and fish in different peppers</p>
                             </div>
                         </div>
                     </div>
@@ -817,7 +817,7 @@
                             7a Kudirat Abiola Way, <br/>
                             Oregun, Lagos, Nigeria <br/>
                             08160267738</p>
-                        <p><a href="mailto:youremail@domain.com">hello@kogsysugarcraft.com</a></p>
+                        <p><a href="mailto:youremail@domain.com">exhibition@kogsysugarcraft.com.ng</a></p>
                         
                     </div>
                 </div>
