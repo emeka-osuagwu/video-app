@@ -127,7 +127,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 				"instructor" => "Yinka Oluwa /L & K Cake & Kenny Amakoh / Kaykes Kraft n Tools ",
 				"start_time" => "14:15",
 				"description" => "You will see how to make a shiny chocolate icing, how to make cake mirror glaze and ganache recipes",
-				"instructor_image" => "Tosan Jemide / Cakes by Tosan",
+				"instructor_image" => "yinka.jpeg",
 			],
 			[
 				"day" => 1,
@@ -224,7 +224,7 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 				"instructor" => "Yinka Oluwa Kenny Amakoh",
 				"start_time" => "13:00",
 				"description" => "",
-				"instructor_image" => "Tosan Jemide / Cakes by Tosan",
+				"instructor_image" => "yinka.jpeg",
 			],
 			[
 				"day" => 2,
