@@ -34,7 +34,7 @@ $(document).ready(function() {
 function payWithPaystack(email, name, phone, price){
 
   var handler = PaystackPop.setup({
-    key: 'pk_test_28a82093a471edd312ab40ce3af7f2b3bbca7aac',
+    key: 'pk_live_8df78654447fd2b6521442cf281250c36b6d4177',
     email: email,
     amount: price,
     ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
