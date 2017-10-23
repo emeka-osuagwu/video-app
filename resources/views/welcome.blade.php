@@ -49,8 +49,6 @@
 </style>
 
 
-
-
 <body id="home" class="wide body-light">
 
 <!-- Preloader -->
@@ -602,7 +600,7 @@
                             <p>
                                 Kogsy proved they are the first and the best in the country, they set the mark and defined their brand
                             </p>
-                            <h4 class="media-heading">by Edith Oxumba</h4>
+                            <h4 class="media-heading">by edith ozumba</h4>
                         </div>
                     </div>
 
@@ -818,7 +816,7 @@
                         <p data-animation="fadeInUp" data-animation-delay="200" class="text-uppercase">Classique Event Centre <br/>
                             7a Kudirat Abiola Way, <br/>
                             Oregun, Lagos, Nigeria <br/>
-                            +2340800000000</p>
+                            08160267738</p>
                         <p><a href="mailto:youremail@domain.com">hello@kogsysugarcraft.com</a></p>
                         
                     </div>

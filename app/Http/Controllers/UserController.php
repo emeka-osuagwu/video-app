@@ -264,14 +264,14 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 			],
 			[
 				"day" => 3,
-				"name" => "Siku and Tarella's classes discounted",
+				"name" => "SIKU AND TARELA'S CLASSES DISCOUNTED",
 				"class" => 2,
 				"price" => "15000",
 				"class_id" => 17,
 				"end_time" => "",
 				"instructor" => "Siku Adewuyi",
 				"start_time" => "",
-				"description" => "Attend Siku and Tarela Classes at a 40% discount ",
+				"description" => "SIKU AND TARELA'S CLASSES DISCOUNTED",
 				"instructor_image" => "Siku.jpeg",
 			],
 
