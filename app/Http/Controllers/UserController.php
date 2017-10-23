@@ -313,9 +313,9 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 
     public function add_to_cookie(Request $request)
     {
-   
+ 
   		$class = collect(json_decode($_COOKIE['class']));
-    	// return $class->where('class_id', $request->class_id)->count() ;
+
     	if ($class->where('class_id', $request->class_id)->count() < 1)
     	{
 	    	$new_data = $this->class_data()->where('class_id', $request->class_id)->first();
@@ -327,16 +327,62 @@ Meet- Lolade Ogunjimi Talented n Techy Award winning cake designer of Dainty Aff
 	    	$data   = json_encode($class);
 	    	$domain = env('host'); 
 	    	setcookie("class", $data, $time, $path, $domain);
+    	}
+
+    	if ($class->pluck('class_id')->contains(16)) 
+    	{
+    		$carts_ids = $class->pluck('class_id');
+    		if (($key = array_search(1, $carts_ids->toArray())) !== false) {
+    		    unset($carts_ids[$key]);
+    		}
+
+    		if (($key = array_search(2, $carts_ids->toArray())) !== false) {
+    		    unset($carts_ids[$key]);
+    		}
+
+    		if (($key = array_search(3, $carts_ids->toArray())) !== false) {
+    		    unset($carts_ids[$key]);
+    		}
+
+    		$class = $this->class_data()->whereIn('class_id', $carts_ids);
+	    	
+
+    		$time   =  time() + 360000;
+    		$path   = '/';
+    		$data   = json_encode($class);
+    		$domain = env('host'); 
+    		setcookie("class", $data, $time, $path, $domain);
+    	}
+    	elseif ($class->pluck('class_id')->contains(17)) 
+    	{
+    		$carts_ids = $class->pluck('class_id');
+    		if (($key = array_search(9, $carts_ids->toArray())) !== false) {
+    		    unset($carts_ids[$key]);
+    		}
+
+    		if (($key = array_search(10, $carts_ids->toArray())) !== false) {
+    		    unset($carts_ids[$key]);
+    		}
+
+    		if (($key = array_search(210, $carts_ids->toArray())) !== false) {
+    		    unset($carts_ids[$key]);
+    		}
+
+    		$class = $this->class_data()->whereIn('class_id', $carts_ids);
     		
-    		return redirect('/#tabs-lv1');
-    	}
-    	else 
-    	{	
-    		return redirect('/#tabs-lv1');
-    	}
-    	
 
+    		$time   =  time() + 360000;
+    		$path   = '/';
+    		$data   = json_encode($class);
+    		$domain = env('host'); 
+    		setcookie("class", $data, $time, $path, $domain);
+    	}
+    	else
+    	{
 
+    	}
+	    
+	    return redirect('/#tabs-lv1');
 
     }
 
