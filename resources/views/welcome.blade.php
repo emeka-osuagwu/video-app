@@ -207,11 +207,11 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <p data-animation="fadeInUp" data-animation-delay="300" style="text-align: justify">
-                            The Kogsy Cake and Sugarcraft Exhibition is West Africa's  longest  running.
-                            The theme for this year is fashion inspired cakes by musician and OAPs . This exhibition will feature world class sugarcraft artist, massive sales of cake tools, books ingredients,bakery machinery etc
+                            The Kogsy Cake and Sugarcraft Exhibition is West Africa’s longest running.
+                            The theme for this year is fashion inspired cakes by musician and OAPs. This exhibition will feature world class sugarcraft artist, massive sales of cake tools, books ingredients, bakery machinery etc
                             There is a table of honour where the best cake designers will showcase their cakes. A perfect place if you are looking for a wedding or celebration cake.
-                            The business seminar  is on pricing for profit and standing out in a competitive market  
-                            The Exhibition is a perfect setting for Mentee and mentors to meet at this fair everyone has something to look forward to from beginners to professionals
+                            The business seminar is on pricing for profit and standing out in a competitive market  
+                            The Exhibition is a perfect setting for Mentee and mentors to meet at this fair everyone has something to look forward to from beginners to professionals.
                         </p>
                         <p class="btn-row">
                             <a href="#schedule" class="btn btn-theme btn-theme-xl scroll-to" data-animation="flipInY" data-animation-delay="200">Register <i class="fa fa-arrow-circle-right"></i></a><!--

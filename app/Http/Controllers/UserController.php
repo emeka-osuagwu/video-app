@@ -23,7 +23,7 @@ class UserController extends Controller
 				"end_time" => "11:00",
 				"instructor" => "Tosan Jemide / Cakes by Tosan",
 				"start_time" => "10:00",
-				"description" => "You will see how African's cake maestro will infuse his creativity in making large roses your will never be the same",
+				"description" => "You will see how African's cake maestro will infuse his creativity in making large your rose your will never be the same",
 				"instructor_image" => "tosan.jpeg",
 			],
 			[
