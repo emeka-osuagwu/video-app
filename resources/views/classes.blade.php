@@ -15,7 +15,11 @@
                     @if($class['class_id'] == 1 || $class['class_id'] == 2 || $class['class_id'] == 3)
                         
                         @if($carts->pluck('class_id')->contains(16) == true)
-                            
+                            <a class="pull-right">
+                                <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                    Already in cart
+                                </button>
+                            </a>
                         @else
 
                             @if($carts->pluck('class_id')->contains($class['class_id']) == true)    
@@ -37,7 +41,11 @@
                         @endif
                     @elseif($class['class_id'] == 9 || $class['class_id'] == 10 || $class['class_id'] == 210) 
                         @if($carts->pluck('class_id')->contains(17) == true)
-                            
+                            <a class="pull-right">
+                                <button class="add_to_cart_btn btn" style="font-size: 15px" data="{{ $class['class_id'] }}">
+                                    Already in cart
+                                </button>
+                            </a>
                         @else
 
                             @if($carts->pluck('class_id')->contains($class['class_id']) == true)    
